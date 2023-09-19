@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1626572ABA56E30060C52A /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1626562ABA56E30060C52A /* StartView.swift */; };
+		FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1626582ABA5BD40060C52A /* LogInView.swift */; };
 		FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF862AB8F9A7009441FD /* yConnectApp.swift */; };
 		FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF882AB8F9A7009441FD /* ContentView.swift */; };
 		FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF8A2AB8F9A7009441FD /* Item.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1626562ABA56E30060C52A /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		FB1626582ABA5BD40060C52A /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		FB99EF832AB8F9A7009441FD /* yConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99EF862AB8F9A7009441FD /* yConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yConnectApp.swift; sourceTree = "<group>"; };
 		FB99EF882AB8F9A7009441FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
 				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
 				FB99EFA12AB9194F009441FD /* SearchView.swift */,
+				FB1626562ABA56E30060C52A /* StartView.swift */,
+				FB1626582ABA5BD40060C52A /* LogInView.swift */,
 				FB99EF8A2AB8F9A7009441FD /* Item.swift */,
 				FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */,
 				FB99EFA32AB9209F009441FD /* yConnect.svg */,
@@ -180,6 +186,8 @@
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
+				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
+				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

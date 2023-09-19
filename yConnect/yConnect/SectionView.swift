@@ -32,7 +32,7 @@ struct SectionView: View {
                     .padding(.leading, 10)
                 }
             )
-            .shadow(radius: 10)
+            .shadow(radius: 2)
             .padding(5)
     }
 }
