@@ -23,25 +23,26 @@ struct StartView: View {
                     .frame(width: 300 ,height: 50)
                 Text("¿En qué te podemos ayudar?...")
                     .foregroundColor(Color.white)
-                NavigationLink {
-                    //mandar a ingresar datos
-                } label: {
-                    HStack {
-                        Text("Ingresar")
-                            .foregroundColor(.principalDarker)
-                    }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 7)
-                    .background(
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(.white))
+            
+                    NavigationLink {
+                        LogInView()
+                    } label: {
+                        HStack {
+                            Text("Ingresar")
+                                .foregroundColor(.principalDarker)
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 7)
+                        .background(
+                            RoundedRectangle(cornerRadius: 25)
+                                .fill(.white))
                         
-                }
-                    
+                    }
+                
                 
             }
                 
-        }
+        } .navigationBarBackButtonHidden(true)
     }
 }
 

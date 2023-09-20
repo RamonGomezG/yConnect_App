@@ -1,5 +1,5 @@
 //
-//  LogInView.swift
+//  ConfirmCodeView.swift
 //  yConnect
 //
 //  Created by Alumno on 19/09/23.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct LogInView: View {
-    @State var phoneNumber: String = ""
+struct ConfirmCodeView: View {
+    @State var confirmCode: String = ""
     
     var body: some View {
         ZStack {
@@ -27,7 +27,7 @@ struct LogInView: View {
                     .foregroundColor(Color.white)
                 Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 20)
                 HStack{
-                    TextField("Número teléfonico...", text: $phoneNumber)
+                    TextField("Código de confirmación...", text: $confirmCode)
                 }
                 .frame(width: 300)
                 .padding(10)
@@ -35,10 +35,11 @@ struct LogInView: View {
                 .cornerRadius(50)
                 Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 20)
                 NavigationLink {
-                   ConfirmCodeView()
+                    //mandar a ingresar datos
+                    ExploreView()
                 } label: {
                     HStack {
-                        Text("Ingresar")
+                        Text("Confirmar")
                             .foregroundColor(.white)
                     }
                     .padding(.horizontal, 20)
@@ -46,7 +47,7 @@ struct LogInView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 25)
                             .fill(.principalDarker))
-                        
+                    
                 }
                 
             }
@@ -54,12 +55,12 @@ struct LogInView: View {
             .padding(.horizontal, 30)
             .background(.colorPrincipal)
             .cornerRadius(10)
-            
-                
         }.navigationBarBackButtonHidden(true)
     }
-}
+            
+                
+        }
 
 #Preview {
-    LogInView()
+    ConfirmCodeView()
 }

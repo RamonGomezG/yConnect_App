@@ -36,7 +36,7 @@ struct ExploreView: View {
                     }
                 }
             }
-        }
+        }.navigationBarBackButtonHidden(true)
         
     }
 }

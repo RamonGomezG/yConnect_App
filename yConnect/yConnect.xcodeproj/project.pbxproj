@@ -23,6 +23,7 @@
 		FB99EFA42AB9209F009441FD /* yConnect.svg in Resources */ = {isa = PBXBuildFile; fileRef = FB99EFA32AB9209F009441FD /* yConnect.svg */; };
 		FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EFA72AB922C4009441FD /* LogoView.swift */; };
 		FB99EFAA2AB92611009441FD /* imagen6.png in Resources */ = {isa = PBXBuildFile; fileRef = FB99EFA92AB92611009441FD /* imagen6.png */; };
+		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FB99EFA32AB9209F009441FD /* yConnect.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yConnect.svg; sourceTree = "<group>"; };
 		FB99EFA72AB922C4009441FD /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		FB99EFA92AB92611009441FD /* imagen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagen6.png; sourceTree = "<group>"; };
+		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +80,13 @@
 			children = (
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
+				FB1626562ABA56E30060C52A /* StartView.swift */,
+				FB1626582ABA5BD40060C52A /* LogInView.swift */,
+				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
 				FB99EF962AB90779009441FD /* ExploreView.swift */,
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
 				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
 				FB99EFA12AB9194F009441FD /* SearchView.swift */,
-				FB1626562ABA56E30060C52A /* StartView.swift */,
-				FB1626582ABA5BD40060C52A /* LogInView.swift */,
 				FB99EF8A2AB8F9A7009441FD /* Item.swift */,
 				FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */,
 				FB99EFA32AB9209F009441FD /* yConnect.svg */,
@@ -182,6 +185,7 @@
 			files = (
 				FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */,
 				FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */,
+				FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */,
 				FB99EF9E2AB90FE4009441FD /* SectionView.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
