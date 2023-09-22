@@ -10,7 +10,7 @@ import SwiftData
 
 struct ContentView: View {
     @State private var searchText = ""
-
+    //Si se guardo el commit
     var body: some View {
         NavigationView {
             StartView()
