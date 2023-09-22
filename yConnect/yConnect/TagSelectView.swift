@@ -39,6 +39,13 @@ struct TagSelectView: View {
                         }
                         .frame(width: 350)
                     }
+                    .padding(.bottom, 40)
+                    NavigationLink {
+                        ExploreView()
+                    } label: {
+                        ButtonComponent(title: "Continuar")
+                    }
+                    
                     
                 }
             }

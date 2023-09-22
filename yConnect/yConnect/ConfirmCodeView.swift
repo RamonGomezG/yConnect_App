@@ -36,7 +36,7 @@ struct ConfirmCodeView: View {
                 Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 20)
                 NavigationLink {
                     //mandar a ingresar datos
-                    ExploreView()
+                    TagSelectView()
                 } label: {
                     HStack {
                         Text("Confirmar")
