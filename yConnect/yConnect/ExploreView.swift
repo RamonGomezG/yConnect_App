@@ -27,8 +27,18 @@ struct ExploreView: View {
                         SearchView()
                     }
                     HStack{
-                        SectionView(title: "Artículos", imageName: "imagen1")
-                        SectionView(title: "Noticias", imageName: "imagen2")
+                        NavigationLink {
+                            PostsView()
+                        } label: {
+                            SectionView(title: "Publicaciones", imageName: "imagen1")
+                        }
+                        
+                        NavigationLink {
+                            VideosView()
+                        } label: {
+                            SectionView(title: "Videos", imageName: "imagen2")
+                        }
+                        
                     }
                     HStack{
                         SectionView(title: "Sugerencias", imageName: "imagen4")

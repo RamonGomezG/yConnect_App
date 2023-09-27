@@ -7,20 +7,19 @@
 
 import SwiftUI
 
-struct PostItemView: View {
+struct VideoItemView: View {
     var title: String
-    var igUser: String
-    var imageName: String
+    var ytUser: String
+    var videoLink: String
     var postDate: String
-    var postCaption: String
+    var videoTitle: String
     
     var body: some View {
         VStack {
-            ImageView()
-                
+            VideoView(videoLink: "https://www.youtube.com/embed/Px0vCTfdJ4o?si=exxqj4EAW0r5yCVb", videoTitle: "yCo Centro de Fortalecimiento 2021")
             //Username de la organizacion
             HStack{
-                Text("\(igUser)")
+                Text("\(ytUser)")
                     .font(.title2)
                     .foregroundStyle(Color.principalDarker)
                     .multilineTextAlignment(.leading)
@@ -42,7 +41,7 @@ struct PostItemView: View {
             
             //Descripción del post
             HStack{
-                Text("\(postCaption)")
+                Text("\(videoTitle)")
                     .font(.subheadline)
                     .multilineTextAlignment(.leading)
                 Spacer()
@@ -60,5 +59,5 @@ struct PostItemView: View {
 }
 
 #Preview {
-    PostItemView(title: "Dummy", igUser: "@arena_atencion", imageName: "imagen1", postDate:  "25 de Septiembre 2023", postCaption: "lorem ipsum asoi qwoijd hgue use asjoi asimpole plan od becaus ethie sol eun una vez una organización que publico un post")
+    VideoItemView(title: "Dummy", ytUser: "Consejo Civico", videoLink: "imagen1", postDate:  "25 de Septiembre 2023", videoTitle: "lorem ipsum asoi qwo")
 }

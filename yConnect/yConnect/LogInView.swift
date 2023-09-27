@@ -11,6 +11,7 @@ struct LogInView: View {
     @State var phoneNumber: String = ""
     
     var body: some View {
+        
         ZStack {
             Image("fondoyconnect")
                 .resizable()
@@ -27,7 +28,7 @@ struct LogInView: View {
                     .foregroundColor(Color.white)
                 Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 20)
                 HStack{
-                    TextField("Número teléfonico...", text: $phoneNumber)
+                    TextField("Ingresa tu Número teléfonico...", text: $phoneNumber)
                 }
                 .frame(width: 300)
                 .padding(10)

@@ -1,13 +1,14 @@
 //
-//  PostsView.swift
+//  VideosView.swift
 //  yConnect
 //
-//  Created by Alumno on 25/09/23.
+//  Created by user248071 on 9/26/23.
 //
 
 import SwiftUI
+import AVKit
 
-struct PostsView: View {
+struct VideosView: View {
     var body: some View {
         ZStack{
             Color.colorPrincipal.ignoresSafeArea()
@@ -28,13 +29,13 @@ struct PostsView: View {
                     }
                 }
                 
-                Text("Publicaciones")
+                Text("Videos")
                     .font(.title)
                     .foregroundStyle(Color.principalDarker)
                     .padding(.top, 1)
                 
-                //Despliegue de posts
-                PostItemView(title: "a", igUser: "@yCo_fundacion", imageName: "imagen1", postDate: "25 de Septiembre", postCaption: "Esta es una descripción genérica")
+                //Despliegue de videos
+                VideoItemView(title: "Dummy", ytUser: "@arena_atencion", videoLink: "imagen1", postDate:  "25 de Septiembre 2023", videoTitle: "lorem ipsum asoi qwo")
                 
             }
         }.navigationBarBackButtonHidden(false)
@@ -42,5 +43,5 @@ struct PostsView: View {
 }
 
 #Preview {
-    PostsView()
+    VideosView()
 }

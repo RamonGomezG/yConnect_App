@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3349BB2AC3B44100F99430 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DB3349BA2AC3B44100F99430 /* Kingfisher */; };
+		DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3349BC2AC3B48B00F99430 /* ImageView.swift */; };
+		DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3349BE2AC3BA3500F99430 /* VideosView.swift */; };
+		DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3349C02AC3BAB500F99430 /* VideoView.swift */; };
+		DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3349C22AC3C09800F99430 /* VideoItemView.swift */; };
 		FB106E232AC23DB600B2781E /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB106E222AC23DB600B2781E /* PostsView.swift */; };
 		FB106E252AC2411600B2781E /* PostItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB106E242AC2411600B2781E /* PostItemView.swift */; };
 		FB106E282AC24F0200B2781E /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB106E272AC24F0200B2781E /* Organization.swift */; };
@@ -38,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB3349BC2AC3B48B00F99430 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DB3349BE2AC3BA3500F99430 /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
+		DB3349C02AC3BAB500F99430 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		DB3349C22AC3C09800F99430 /* VideoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemView.swift; sourceTree = "<group>"; };
 		FB106E222AC23DB600B2781E /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		FB106E242AC2411600B2781E /* PostItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemView.swift; sourceTree = "<group>"; };
 		FB106E272AC24F0200B2781E /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
@@ -73,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3349BB2AC3B44100F99430 /* Kingfisher in Frameworks */,
 				FB106E342AC25C0500B2781E /* SwiftyJSON in Frameworks */,
 				FB106E312AC25B9A00B2781E /* Alamofire in Frameworks */,
 			);
@@ -121,7 +131,11 @@
 				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
 				FB99EF962AB90779009441FD /* ExploreView.swift */,
 				FB106E222AC23DB600B2781E /* PostsView.swift */,
+				DB3349BE2AC3BA3500F99430 /* VideosView.swift */,
+				DB3349C02AC3BAB500F99430 /* VideoView.swift */,
+				DB3349C22AC3C09800F99430 /* VideoItemView.swift */,
 				FB106E242AC2411600B2781E /* PostItemView.swift */,
+				DB3349BC2AC3B48B00F99430 /* ImageView.swift */,
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
 				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
 				FB5008702ABD0D1C00028EEB /* TagComponent.swift */,
@@ -166,6 +180,7 @@
 			packageProductDependencies = (
 				FB106E302AC25B9A00B2781E /* Alamofire */,
 				FB106E332AC25C0500B2781E /* SwiftyJSON */,
+				DB3349BA2AC3B44100F99430 /* Kingfisher */,
 			);
 			productName = yConnect;
 			productReference = FB99EF832AB8F9A7009441FD /* yConnect.app */;
@@ -198,6 +213,7 @@
 			packageReferences = (
 				FB106E2F2AC25B9A00B2781E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FB106E322AC25C0500B2781E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				DB3349B92AC3B44100F99430 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FB99EF842AB8F9A7009441FD /* Products */;
 			projectDirPath = "";
@@ -230,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
 				FB106E252AC2411600B2781E /* PostItemView.swift in Sources */,
@@ -243,11 +260,14 @@
 				FB106E2C2AC2561D00B2781E /* Users.swift in Sources */,
 				FB106E2E2AC258A000B2781E /* OrganizationModel.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
+				DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
+				DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */,
+				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +476,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DB3349B92AC3B44100F99430 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 		FB106E2F2AC25B9A00B2781E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -475,6 +503,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DB3349BA2AC3B44100F99430 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB3349B92AC3B44100F99430 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		FB106E302AC25B9A00B2781E /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FB106E2F2AC25B9A00B2781E /* XCRemoteSwiftPackageReference "Alamofire" */;

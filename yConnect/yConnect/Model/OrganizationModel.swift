@@ -22,8 +22,8 @@ class OrganizationModel {
     
     func fetchOrganizations() {
         organizations.removeAll()
+    
         
-        let url = ""
     }
 
     
