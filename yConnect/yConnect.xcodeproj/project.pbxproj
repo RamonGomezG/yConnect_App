@@ -39,6 +39,9 @@
 		FB99EFA42AB9209F009441FD /* yConnect.svg in Resources */ = {isa = PBXBuildFile; fileRef = FB99EFA32AB9209F009441FD /* yConnect.svg */; };
 		FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EFA72AB922C4009441FD /* LogoView.swift */; };
 		FB99EFAA2AB92611009441FD /* imagen6.png in Resources */ = {isa = PBXBuildFile; fileRef = FB99EFA92AB92611009441FD /* imagen6.png */; };
+		FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5B2AC63E58001CC506 /* MyButton.swift */; };
+		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
+		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		FB99EFA32AB9209F009441FD /* yConnect.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yConnect.svg; sourceTree = "<group>"; };
 		FB99EFA72AB922C4009441FD /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		FB99EFA92AB92611009441FD /* imagen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagen6.png; sourceTree = "<group>"; };
+		FBB0ED5B2AC63E58001CC506 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgView.swift; sourceTree = "<group>"; };
+		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +129,9 @@
 			children = (
 				FB106E262AC24EE000B2781E /* Model */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
+				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
+				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
+				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
 				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
@@ -248,6 +257,7 @@
 			files = (
 				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
+				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
 				FB106E252AC2411600B2781E /* PostItemView.swift in Sources */,
 				FB106E282AC24F0200B2781E /* Organization.swift in Sources */,
@@ -257,6 +267,7 @@
 				FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */,
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,
 				FB99EF9E2AB90FE4009441FD /* SectionView.swift in Sources */,
+				FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */,
 				FB106E2C2AC2561D00B2781E /* Users.swift in Sources */,
 				FB106E2E2AC258A000B2781E /* OrganizationModel.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
@@ -266,6 +277,7 @@
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
+				FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */,
 				DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */,
 				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
