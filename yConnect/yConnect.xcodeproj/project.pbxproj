@@ -43,6 +43,10 @@
 		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
+		FBDBF0C92AC7705600615B7E /* RegistroPersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBF0C82AC7705500615B7E /* RegistroPersView.swift */; };
+		FBDBF0CB2AC7742D00615B7E /* TagsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBF0CA2AC7742D00615B7E /* TagsButton.swift */; };
+		FBDBF0CD2AC7789C00615B7E /* RegistroOrgsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBF0CC2AC7789C00615B7E /* RegistroOrgsButton.swift */; };
+		FBDBF0CF2AC7799A00615B7E /* OrgsFavsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBF0CE2AC7799A00615B7E /* OrgsFavsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +85,10 @@
 		FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgView.swift; sourceTree = "<group>"; };
 		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
+		FBDBF0C82AC7705500615B7E /* RegistroPersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroPersView.swift; sourceTree = "<group>"; };
+		FBDBF0CA2AC7742D00615B7E /* TagsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsButton.swift; sourceTree = "<group>"; };
+		FBDBF0CC2AC7789C00615B7E /* RegistroOrgsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgsButton.swift; sourceTree = "<group>"; };
+		FBDBF0CE2AC7799A00615B7E /* OrgsFavsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgsFavsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +138,11 @@
 				FB106E262AC24EE000B2781E /* Model */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
+				FBDBF0CC2AC7789C00615B7E /* RegistroOrgsButton.swift */,
+				FBDBF0CA2AC7742D00615B7E /* TagsButton.swift */,
+				FBDBF0CE2AC7799A00615B7E /* OrgsFavsButton.swift */,
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
+				FBDBF0C82AC7705500615B7E /* RegistroPersView.swift */,
 				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
@@ -257,6 +269,7 @@
 			files = (
 				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
+				FBDBF0CB2AC7742D00615B7E /* TagsButton.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
 				FB106E252AC2411600B2781E /* PostItemView.swift in Sources */,
@@ -264,6 +277,7 @@
 				FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */,
 				FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */,
 				FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */,
+				FBDBF0C92AC7705600615B7E /* RegistroPersView.swift in Sources */,
 				FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */,
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,
 				FB99EF9E2AB90FE4009441FD /* SectionView.swift in Sources */,
@@ -271,10 +285,12 @@
 				FB106E2C2AC2561D00B2781E /* Users.swift in Sources */,
 				FB106E2E2AC258A000B2781E /* OrganizationModel.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
+				FBDBF0CF2AC7799A00615B7E /* OrgsFavsButton.swift in Sources */,
 				DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
+				FBDBF0CD2AC7789C00615B7E /* RegistroOrgsButton.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
 				FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */,
