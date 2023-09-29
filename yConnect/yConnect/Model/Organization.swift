@@ -17,6 +17,7 @@ struct Organization: Identifiable {
     var Igtag: String
     var Telephone: String
     var Email: String
+    var Rating: Int
     
 }
 
@@ -30,6 +31,7 @@ extension Organization {
         Tags: ["emprendimiento", "apoyo", "social", "consultaria"],
         Igtag: "pollolokooficial",
         Telephone: "8661735944",
-        Email: "yconnection@gmail.com")
+        Email: "yconnection@gmail.com",
+        Rating: 3)
     
 }

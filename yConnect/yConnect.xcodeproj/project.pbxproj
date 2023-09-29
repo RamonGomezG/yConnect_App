@@ -47,6 +47,7 @@
 		FBE87FAA2AC652F600169997 /* CallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FA92AC652F600169997 /* CallButtonView.swift */; };
 		FBE87FAC2AC6531F00169997 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */; };
 		FBE87FAE2AC6534500169997 /* OrgInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FAD2AC6534500169997 /* OrgInfoView.swift */; };
+		FBF7DB322AC76DA900DFE797 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7DB312AC76DA900DFE797 /* SearchPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		FBE87FA92AC652F600169997 /* CallButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallButtonView.swift; sourceTree = "<group>"; };
 		FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
 		FBE87FAD2AC6534500169997 /* OrgInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgInfoView.swift; sourceTree = "<group>"; };
+		FBF7DB312AC76DA900DFE797 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +144,14 @@
 				FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */,
 				FBE87FA92AC652F600169997 /* CallButtonView.swift */,
 				FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */,
-				FBE87FAD2AC6534500169997 /* OrgInfoView.swift */,
 				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
 				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
 				FB1626562ABA56E30060C52A /* StartView.swift */,
+				FBE87FAD2AC6534500169997 /* OrgInfoView.swift */,
+				FBF7DB312AC76DA900DFE797 /* SearchPage.swift */,
+				FB99EFA12AB9194F009441FD /* SearchView.swift */,
 				FB1626582ABA5BD40060C52A /* LogInView.swift */,
 				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
 				FB99EF962AB90779009441FD /* ExploreView.swift */,
@@ -160,7 +164,6 @@
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
 				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
 				FB5008702ABD0D1C00028EEB /* TagComponent.swift */,
-				FB99EFA12AB9194F009441FD /* SearchView.swift */,
 				FB99EF8A2AB8F9A7009441FD /* Item.swift */,
 				FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */,
 				FB99EFA32AB9209F009441FD /* yConnect.svg */,
@@ -269,6 +272,7 @@
 			files = (
 				FBE87FA82AC6519E00169997 /* DirectionButtonView.swift in Sources */,
 				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
+				FBF7DB322AC76DA900DFE797 /* SearchPage.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
