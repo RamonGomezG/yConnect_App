@@ -24,11 +24,6 @@ struct SearchPage: View {
                             OrgInfoView(Org_Name: org.Name, Org_Des: org.Description, Org_Calf: Float(org.Rating))
                         }
                     }
-                    padding(.vertical, 10)
-                    .background(
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(.white))
-                    .padding(.horizontal, 25)
                 }
             }
         }
