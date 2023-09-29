@@ -25,6 +25,8 @@
 		FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB50086E2ABD0B3800028EEB /* TagSelectView.swift */; };
 		FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008702ABD0D1C00028EEB /* TagComponent.swift */; };
 		FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008722ABD127B00028EEB /* ButtonComponent.swift */; };
+		FB8F33052AC653E5007B41D7 /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33042AC653E5007B41D7 /* PostsModel.swift */; };
+		FB8F33072AC657FA007B41D7 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33062AC657FA007B41D7 /* Tags.swift */; };
 		FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF862AB8F9A7009441FD /* yConnectApp.swift */; };
 		FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF882AB8F9A7009441FD /* ContentView.swift */; };
 		FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF8A2AB8F9A7009441FD /* Item.swift */; };
@@ -61,6 +63,8 @@
 		FB50086E2ABD0B3800028EEB /* TagSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectView.swift; sourceTree = "<group>"; };
 		FB5008702ABD0D1C00028EEB /* TagComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagComponent.swift; sourceTree = "<group>"; };
 		FB5008722ABD127B00028EEB /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
+		FB8F33042AC653E5007B41D7 /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
+		FB8F33062AC657FA007B41D7 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 		FB99EF832AB8F9A7009441FD /* yConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99EF862AB8F9A7009441FD /* yConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yConnectApp.swift; sourceTree = "<group>"; };
 		FB99EF882AB8F9A7009441FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				FB106E292AC2548100B2781E /* Posts.swift */,
 				FB106E2B2AC2561D00B2781E /* Users.swift */,
 				FB106E2D2AC258A000B2781E /* OrganizationModel.swift */,
+				FB8F33042AC653E5007B41D7 /* PostsModel.swift */,
+				FB8F33062AC657FA007B41D7 /* Tags.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,10 +135,10 @@
 			children = (
 				FB106E262AC24EE000B2781E /* Model */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
+				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
 				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
-				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
 				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
 				FB1626562ABA56E30060C52A /* StartView.swift */,
@@ -257,6 +263,7 @@
 			files = (
 				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
+				FB8F33052AC653E5007B41D7 /* PostsModel.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
 				FB106E252AC2411600B2781E /* PostItemView.swift in Sources */,
@@ -270,6 +277,7 @@
 				FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */,
 				FB106E2C2AC2561D00B2781E /* Users.swift in Sources */,
 				FB106E2E2AC258A000B2781E /* OrganizationModel.swift in Sources */,
+				FB8F33072AC657FA007B41D7 /* Tags.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
 				DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
