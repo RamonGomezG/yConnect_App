@@ -43,6 +43,7 @@
 		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
+		FBE87FA82AC6519E00169997 /* DirectionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgView.swift; sourceTree = "<group>"; };
 		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
+		FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
+				FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */,
 				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE87FA82AC6519E00169997 /* DirectionButtonView.swift in Sources */,
 				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
