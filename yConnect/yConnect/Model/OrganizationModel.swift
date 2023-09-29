@@ -22,8 +22,6 @@ class OrganizationModel {
     
     func fetchOrganizations() {
         organizations.removeAll()
-    
-        
     }
 
     
