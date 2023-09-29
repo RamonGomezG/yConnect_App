@@ -44,6 +44,9 @@
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
 		FBE87FA82AC6519E00169997 /* DirectionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */; };
+		FBE87FAA2AC652F600169997 /* CallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FA92AC652F600169997 /* CallButtonView.swift */; };
+		FBE87FAC2AC6531F00169997 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */; };
+		FBE87FAE2AC6534500169997 /* OrgInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FAD2AC6534500169997 /* OrgInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +86,9 @@
 		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 		FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButtonView.swift; sourceTree = "<group>"; };
+		FBE87FA92AC652F600169997 /* CallButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallButtonView.swift; sourceTree = "<group>"; };
+		FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
+		FBE87FAD2AC6534500169997 /* OrgInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
 				FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */,
+				FBE87FA92AC652F600169997 /* CallButtonView.swift */,
+				FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */,
+				FBE87FAD2AC6534500169997 /* OrgInfoView.swift */,
 				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
@@ -276,6 +285,8 @@
 				FB106E2E2AC258A000B2781E /* OrganizationModel.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
 				DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */,
+				FBE87FAC2AC6531F00169997 /* ShareButtonView.swift in Sources */,
+				FBE87FAA2AC652F600169997 /* CallButtonView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
@@ -283,6 +294,7 @@
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
 				FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */,
 				DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */,
+				FBE87FAE2AC6534500169997 /* OrgInfoView.swift in Sources */,
 				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
 			);
