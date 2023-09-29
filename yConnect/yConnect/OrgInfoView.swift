@@ -20,6 +20,7 @@ struct OrgInfoView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack(alignment: .leading, spacing: 10){
                 HStack(spacing: 10){
+                    Spacer()
                     Image("Image1")
                         .resizable()
                         .frame(width: 100, height: 70)
@@ -35,17 +36,20 @@ struct OrgInfoView: View {
                         .frame(width: 100, height: 70)
                         .cornerRadius(10)
                         .padding(.top, 15)
+                    Spacer()
                 }
-                Text("\(Org_Name)")
-                    .font(.system(size: 20))
-                    .padding(.top, 5)
-                    .foregroundStyle(Color("TitleColor"))
-                
-                Text("\(Org_Des)")
-                    .font(.system(size: 12))
-                    .padding(.top, 2)
-                    .foregroundStyle(.black)
-                
+                VStack {
+                    Text("\(Org_Name)")
+                        .font(.system(size: 20))
+                        .padding(.top, 5)
+                        .foregroundStyle(Color("TitleColor"))
+                    
+                    Text("\(Org_Des)")
+                        .font(.system(size: 10))
+                        .padding(.top, 2)
+                        .foregroundStyle(.black)
+                }
+                .padding(.horizontal, 15)
                 HStack{
                     Text(String(format: "%.1f", Org_Calf))
                         .font(.system(size: 20))
@@ -56,6 +60,7 @@ struct OrgInfoView: View {
                             .frame(width: 15, height: 15)
                             .foregroundStyle(.yellow)
                     }
+                    Spacer()
                     Button(action: {
                         isFavorite.toggle()}) {
                             Image(systemName: isFavorite ? "heart.fill" : "heart")
@@ -63,22 +68,25 @@ struct OrgInfoView: View {
                                 .frame(width: 25, height: 23)
                                 .foregroundStyle(isFavorite ? Color("BackColor") : Color("BackColor"))
                         }
-                        .padding(.horizontal, 85)
+                        .padding(.trailing, 20)
                 }
+                .padding(.horizontal, 15)
                 .padding(.top, 2)
-                HStack(spacing: 10){
-                    CallButtonView(phoneNumber: "6562465495")
-                    ShareButtonView(shareText: "Apps")
-                    DirectionButtonView(address: "Av. Eugenio Garza Sada 2501 Sur, Tecnológico, 64849 Monterrey, N.L.")
+                HStack(spacing: 5){
+                    CallButtonView(phoneNumber: "6562465495", icon: "phone.fill")
+                    ShareButtonView(shareText: "Apps", icon: "arrowshape.turn.up.right.fill")
+                    DirectionButtonView(address: "Av. Eugenio Garza Sada 2501 Sur, Tecnológico, 64849 Monterrey, N.L.", icon: "map.fill")
                 }
+                .padding(.horizontal, 18)
                 .padding(.top, 10)
                 .padding(.bottom, 10)
             }
-            .padding(.horizontal, 20)
+//            .padding(.horizontal, 80)
             .padding(.vertical, 10)
             .background(
                 RoundedRectangle(cornerRadius: 25)
                     .fill(.white))
+            .padding(.horizontal, 25)
         }
     }
 }
