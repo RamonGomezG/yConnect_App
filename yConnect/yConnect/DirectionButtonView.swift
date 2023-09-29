@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DirectionButtonView: View {
     @State var address: String
+    @State var icon: String
     
     var body: some View {
         Button(action: {
@@ -17,11 +18,15 @@ struct DirectionButtonView: View {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
         }) {
-            Text("Indicaciones")
+            HStack{
+                Image(systemName: "map.fill")
+                Text("Indicaciones")
+                    .font(.system(size: 12))
+            }
                 .foregroundColor(.white)
                 .bold()
                 .padding(.vertical, 5)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 5)
                 .background(Color("BackColor"))
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         }
@@ -30,5 +35,5 @@ struct DirectionButtonView: View {
 }
 
 #Preview {
-    DirectionButtonView(address: "Av. Eugenio Garza Sada 2501 Sur, Tecnológico, 64849 Monterrey, N.L.")
+    DirectionButtonView(address: "Av. Eugenio Garza Sada 2501 Sur, Tecnológico, 64849 Monterrey, N.L.", icon: "map.fill")
 }

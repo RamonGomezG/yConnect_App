@@ -10,16 +10,21 @@ import SwiftUI
 struct CallButtonView: View {
     @State var phoneNumber: String
     @State var isActionSheet = false
+    @State var icon: String
     
     var body: some View {
         Button(action: {
             isActionSheet.toggle()
         }) {
-            Text("Llamar")
+            HStack{
+                Image(systemName: "phone.fill")
+                Text("Llamar")
+                    .font(.system(size: 15))
+            }
                 .foregroundColor(.white)
                 .bold()
                 .padding(.vertical, 5)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 5)
                 .background(Color("BackColor"))
                 .clipShape(RoundedRectangle(cornerRadius: 10))
         }
@@ -40,5 +45,5 @@ struct CallButtonView: View {
 }
 
 #Preview {
-    CallButtonView(phoneNumber: "81 298 391 283")
+    CallButtonView(phoneNumber: "81 298 391 283", icon: "phone.fill")
 }
