@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostsView: View {
+    var postsModel = PostsModel()
+    
     var body: some View {
         ZStack{
             Color.colorPrincipal.ignoresSafeArea()
@@ -34,13 +36,32 @@ struct PostsView: View {
                     .padding(.top, 1)
                 
                 //Despliegue de posts
-                PostItemView(title: "a", igUser: "@yCo_fundacion", imageName: "imagen1", postDate: "25 de Septiembre", postCaption: "Esta es una descripción genérica")
+                ForEach(postsModel.posts) { post in
+                    PostItemView(post: post)
+                }
                 
             }
-        }.navigationBarBackButtonHidden(false)
+            
+        }
+        .navigationBarBackButtonHidden(false)
+        .onAppear{
+            postsModel.fetchPostsWithTags(user: Users(Name: "User Dummy",
+                                                      Telephone: "81 28382828",
+                                                      Description: "Soy un usuario creado para probar la aplicación",
+                                                      UserTags: Tags(Tags: ["pollo", "restaurante", "el pollo loco"]),
+                                                      Favourites: ["Arena", "yCo"]))
+        }
     }
 }
+
+
 
 #Preview {
     PostsView()
 }
+
+/**
+ post: Posts(User: "ycomx",
+           Caption: "Agradecemos a las organizaciones que asistieron al festejo por las fiestas patrias hoy en las instalaciones de #yCo y por su participación en la actividad Desacartonando el Corazón de la mano de Patricia Contreras de Arte Sustentable A.C.",
+           Image: "https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/379414828_370406048647065_5900128128262878857_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeHRlggEaKf6yR5NJjPkEzDIWzahfzTwiltbNqF_NPCKW3g8vlWybF5-NzipF_s9e8ywoCELZu8x2LpNFuduGZZ-&_nc_ohc=To6h-Q0KhkkAX_HIoKO&_nc_ht=scontent-qro1-1.xx&oh=00_AfDeDsKgOjU0J-YbybQvvoeqc3fc9hPdKlr06z_Dt8Cl2g&oe=6518534C")
+ */

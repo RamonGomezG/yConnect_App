@@ -7,4 +7,6 @@
 
 import Foundation
 
-var Tags : [String]
+struct Tags: Codable {
+    var Tags: [String]
+}
