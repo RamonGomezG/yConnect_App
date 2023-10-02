@@ -20,26 +20,19 @@ class PostsModel {
     
     func fetchPostsWithTags(user: Users) {
         posts.removeAll()
-        
-        //let postTags = user.UserTags
-
-        struct UserTags: Encodable {
-            let Tags: [String]
-        }
-        
-        let userTags = UserTags(Tags: ["pollo", "restaurante", "el pollo loco"])
+        let userTags = user.UserTags
         
         let url = "http://10.14.255.174:3000/posts/ig/getFromTag" //revisar si no se tienen que cumplir tooodos los tags porque eso limitaria los resultados a solo los que tienen exactamente la misma combinacion
         
         AF.request(url,
-                   method: .get,
+                   method: .post,
                    parameters: userTags,
                    encoder: JSONParameterEncoder.default).response {data in
-            debugPrint(data)
-            //let json = try! JSON(data: data.data!)
+            //debugPrint(data)
+            let json = try! JSON(data: data.data!)
             //debugPrint(json)
             
-            /*for p in json["data"] {
+            for p in json["data"] {
                 let post = Posts(
                     id: p.1["Image"].stringValue,
                     User: p.1["User"].stringValue,
@@ -47,8 +40,9 @@ class PostsModel {
                     Image: p.1["Image"].stringValue
                 )
                 self.posts.append(post)
-            }*/
-            //print(json)
+                print(post.Image)
+            }
+        
         //}
             
         }
