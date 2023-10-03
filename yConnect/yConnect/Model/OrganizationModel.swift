@@ -14,7 +14,6 @@ import SwiftyJSON
 class OrganizationModel {
     
     var organizations = [Organization]()
-    var post = [Posts]()
     
     init () {
         
@@ -22,8 +21,24 @@ class OrganizationModel {
     
     func fetchOrganizations() {
         organizations.removeAll()
+        
+        let url = "http://10.14.255.174:3000/organizations"
+        
+        AF.request(url,method: .get).response { data in
+            let json = try! JSON(data: data.data!)
+            
+            for org in json["data"].arrayValue{
+                let organization = Organization(
+                    id: org["ID"].stringValue,
+                    Name: org["Name"].stringValue,
+                    Location: org["Location"].stringValue,
+                    Description: org["Description"].stringValue,
+                    Tags: org["Tags"].arrayObject as? [String] ?? [],
+                    Igtag: org["Igtag"].stringValue,
+                    Telephone: org["Name"].stringValue,
+                    Email: org["Name"].stringValue)
+            }
+        }
     }
-
-    
 }
 

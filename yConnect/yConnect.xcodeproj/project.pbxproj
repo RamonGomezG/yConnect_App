@@ -42,6 +42,9 @@
 		FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5B2AC63E58001CC506 /* MyButton.swift */; };
 		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
+		FBB5B80A2ACB728900A423A9 /* SeachPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5B8092ACB728900A423A9 /* SeachPage.swift */; };
+		FBB5B80C2ACB75D900A423A9 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5B80B2ACB75D900A423A9 /* PostModel.swift */; };
+		FBB5B80E2ACB8DEF00A423A9 /* DemoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5B80D2ACB8DEF00A423A9 /* DemoTag.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
 		FBE87FA82AC6519E00169997 /* DirectionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */; };
 		FBE87FAA2AC652F600169997 /* CallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE87FA92AC652F600169997 /* CallButtonView.swift */; };
@@ -84,6 +87,10 @@
 		FBB0ED5B2AC63E58001CC506 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgView.swift; sourceTree = "<group>"; };
 		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		FBB5B8092ACB728900A423A9 /* SeachPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachPage.swift; sourceTree = "<group>"; };
+		FBB5B80B2ACB75D900A423A9 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FBB5B80D2ACB8DEF00A423A9 /* DemoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTag.swift; sourceTree = "<group>"; };
+		FBB5B80F2ACB963400A423A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 		FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionButtonView.swift; sourceTree = "<group>"; };
 		FBE87FA92AC652F600169997 /* CallButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallButtonView.swift; sourceTree = "<group>"; };
@@ -109,9 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				FB106E272AC24F0200B2781E /* Organization.swift */,
+				FBB5B80B2ACB75D900A423A9 /* PostModel.swift */,
+				FB106E2D2AC258A000B2781E /* OrganizationModel.swift */,
 				FB106E292AC2548100B2781E /* Posts.swift */,
 				FB106E2B2AC2561D00B2781E /* Users.swift */,
-				FB106E2D2AC258A000B2781E /* OrganizationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,16 +143,19 @@
 		FB99EF852AB8F9A7009441FD /* yConnect */ = {
 			isa = PBXGroup;
 			children = (
+				FBB5B80F2ACB963400A423A9 /* Info.plist */,
 				FB106E262AC24EE000B2781E /* Model */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
+				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
 				FBE87FA72AC6519E00169997 /* DirectionButtonView.swift */,
 				FBE87FA92AC652F600169997 /* CallButtonView.swift */,
+				FBB5B8092ACB728900A423A9 /* SeachPage.swift */,
 				FBE87FAB2AC6531F00169997 /* ShareButtonView.swift */,
 				FBE87FAD2AC6534500169997 /* OrgInfoView.swift */,
+				FBB5B80D2ACB8DEF00A423A9 /* DemoTag.swift */,
 				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
-				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
 				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
 				FB1626562ABA56E30060C52A /* StartView.swift */,
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE87FA82AC6519E00169997 /* DirectionButtonView.swift in Sources */,
+				FBB5B80C2ACB75D900A423A9 /* PostModel.swift in Sources */,
 				DB3349BD2AC3B48B00F99430 /* ImageView.swift in Sources */,
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
@@ -289,11 +301,13 @@
 				FBE87FAA2AC652F600169997 /* CallButtonView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
+				FBB5B80E2ACB8DEF00A423A9 /* DemoTag.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
 				FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */,
 				DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */,
+				FBB5B80A2ACB728900A423A9 /* SeachPage.swift in Sources */,
 				FBE87FAE2AC6534500169997 /* OrgInfoView.swift in Sources */,
 				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
@@ -433,6 +447,7 @@
 				DEVELOPMENT_TEAM = Q4L5GLAD5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = yConnect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +477,7 @@
 				DEVELOPMENT_TEAM = Q4L5GLAD5L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = yConnect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

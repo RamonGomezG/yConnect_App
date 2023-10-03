@@ -17,13 +17,12 @@ struct Organization: Identifiable {
     var Igtag: String
     var Telephone: String
     var Email: String
-    
 }
 
 extension Organization {
     
     static var dummy = Organization(
-        id:"pollolokooficial",
+        id:"6512190ba665e119a5e904f7",
         Name: "yCo Foundation",
         Location: "Av. Del Estado 208, Tecnológico, 64700 Monterrey, N.L.",
         Description: "Somos una comunidad de innovación, que cuenta con espacio físico de encuentro, fortalecimiento y acción colectiva, para generar impacto social.",
@@ -31,5 +30,4 @@ extension Organization {
         Igtag: "pollolokooficial",
         Telephone: "8661735944",
         Email: "yconnection@gmail.com")
-    
 }
