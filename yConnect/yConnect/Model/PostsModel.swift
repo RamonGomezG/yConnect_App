@@ -40,7 +40,7 @@ class PostsModel {
                     Image: p.1["Image"].stringValue
                 )
                 self.posts.append(post)
-                print(post.Image)
+                
             }
         
         //}

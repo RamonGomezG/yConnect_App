@@ -19,47 +19,50 @@ struct PostItemView: View {
      */
     
     var body: some View {
-        VStack {
-            ImageView(url: post.Image)
+        Link(destination: URL(string: "https://www.instagram.com/\(post.User)/")!, label: {
+            VStack {
+                ImageView(url: post.Image)
+                    
+                //Username de la organizacion
+                HStack{
+                    Text("\(post.User)")
+                        .font(.title2)
+                        .foregroundStyle(Color.principalDarker)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                }
+                .frame( width: .infinity)
+                .padding(.leading, 9)
                 
-            //Username de la organizacion
-            HStack{
-                Text("\(post.User)")
-                    .font(.title2)
-                    .foregroundStyle(Color.principalDarker)
-                    .multilineTextAlignment(.leading)
-                Spacer()
+                //Fecha de publicación
+                HStack{
+                    Text("falta obtener dato")
+                        .font(.subheadline)
+                        .foregroundStyle(Color.gray)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                }
+                .frame( width: .infinity)
+                .padding(.leading, 9)
+                
+                //Descripción del post
+                HStack{
+                    Text("\(post.Caption)")
+                        .font(.subheadline)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                }
+                .frame( width: .infinity)
+                .padding(.leading, 9)
+                
             }
-            .frame( width: .infinity)
-            .padding(.leading, 9)
-            
-            //Fecha de publicación
-            HStack{
-                Text("falta obtener dato")
-                    .font(.subheadline)
-                    .foregroundStyle(Color.gray)
-                    .multilineTextAlignment(.leading)
-                Spacer()
-            }
-            .frame( width: .infinity)
-            .padding(.leading, 9)
-            
-            //Descripción del post
-            HStack{
-                Text("\(post.Caption)")
-                    .font(.subheadline)
-                    .multilineTextAlignment(.leading)
-                Spacer()
-            }
-            .frame( width: .infinity)
-            .padding(.leading, 9)
-            
-        }
-        .frame(width: 350)
-        .padding(.horizontal, 10)
-        .padding(.vertical, 20)
-        .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+            .frame(width: 350)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 20)
+            .background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .tint(Color.black)
+        })
     }
 }
 

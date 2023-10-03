@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TagSelectView: View {
-    var tags = ["Terapia", "Psicología", "Autismo", "Niños", "Ascesoría", "Exámen"]
+   /* var tags = 
     
     var body: some View {
         ZStack{
@@ -51,7 +51,51 @@ struct TagSelectView: View {
             }
         }.navigationBarBackButtonHidden(true)
     }
-}
+    */
+        @StateObject var viewModel = TagModel()
+        
+        var body: some View {
+            VStack{
+                Text("Enter Tag Here:")
+                    .padding()
+                TaskSearchBarComponent(viewModel: viewModel)
+                
+                VStack(alignment: .leading, spacing: 4){
+                    ForEach(viewModel.rows, id:\.self){ rows in
+                        HStack(spacing: 6){
+                            ForEach(rows){ row in
+                                Text(row.name)
+                                    .font(.system(size: 16))
+                                    .padding(.leading, 14)
+                                    .padding(.trailing, 30)
+                                    .padding(.vertical, 8)
+                                    .background(
+                                        ZStack(alignment: .trailing){
+                                            Capsule()
+                                                .fill(.gray.opacity(0.3))
+                                            Button{
+                                                viewModel.removeTag(by: row.id)
+                                            } label:{
+                                                Image(systemName: "xmark")
+                                                    .frame(width: 15, height: 15)
+                                                    .padding(.trailing, 8)
+                                                    .foregroundColor(.red)
+                                            }
+                                        }
+                                    )
+                            }
+                        }
+                        .frame(height: 28)
+                        .padding(.bottom, 10)
+                    }
+                }
+                .padding(24)
+                
+                Spacer()
+            }
+        }
+    }
+
 
 #Preview {
     TagSelectView()
