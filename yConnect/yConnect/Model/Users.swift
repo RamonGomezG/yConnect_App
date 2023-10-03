@@ -14,7 +14,7 @@ struct Users {
     //var Email: String
     var Description: String
     var Tags: [String]
-    var Favourites: [String]
+    var Favorites: [String]
     //var Password: string
 }
 
@@ -25,6 +25,6 @@ extension Users {
         Telephone: "81 28382828",
         Description: "Soy un usuario creado para probar la aplicación",
         Tags: ["Autismo", "Niños", "Terapia"],
-        Favourites: ["Arena", "yCo"]
+        Favorites: []
     )
 }

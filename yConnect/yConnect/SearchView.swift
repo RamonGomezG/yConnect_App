@@ -37,6 +37,7 @@ struct SearchView: View {
             }
             .font(.headline)
             .padding()
+            Spacer()
                 
     }
 }
