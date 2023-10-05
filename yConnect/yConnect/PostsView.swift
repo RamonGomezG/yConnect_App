@@ -47,11 +47,12 @@ struct PostsView: View {
         .onAppear{
             postsModel.fetchPostsWithTags(
                 user: Users(
-                    Name: "User Dummy",
-                    Telephone: "81 28382828",
-                    Description: "Soy un usuario creado para probar la aplicación",
-                    UserTags: Tags(Tags: ["pollo", "restaurante", "el pollo loco"]),
-                    Favourites: ["Arena", "yCo"]))
+                    //Name: "User Dummy",
+                    Telephone: "81 28382828"
+                    //Description: "Soy un usuario creado para probar la aplicación",
+                    //UserTags: Tags(Tags: ["pollo", "restaurante", "el pollo loco"]),
+                    //Favourites: ["Arena", "yCo"]
+                ))
         }
     }
 }

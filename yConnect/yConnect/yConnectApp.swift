@@ -15,6 +15,6 @@ struct yConnectApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Item.self)
+        .modelContainer(for: Users.self)
     }
 }
