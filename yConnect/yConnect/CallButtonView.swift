@@ -32,7 +32,7 @@ struct CallButtonView: View {
             ActionSheet(
                 title: Text("¿Llamar a esta organización?"),
                 buttons: [
-                    .default(Text("Llamar")){
+                    .default(Text(phoneNumber)){
                         if let url = URL(string: "tel://\(phoneNumber)"){
                             UIApplication.shared.open(url)
                         }

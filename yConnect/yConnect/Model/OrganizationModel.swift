@@ -24,7 +24,7 @@ class OrganizationModel {
         
         let url = "http://10.14.255.174:3000/organizations"
         
-        AF.request(url,method: .get).response { data in
+        AF.request(url,method: .get).response { [self] data in
             let json = try! JSON(data: data.data!)
             
             for org in json["data"].arrayValue{
@@ -37,6 +37,7 @@ class OrganizationModel {
                     Igtag: org["Igtag"].stringValue,
                     Telephone: org["Name"].stringValue,
                     Email: org["Name"].stringValue)
+                organizations.append(organization)
             }
         }
     }

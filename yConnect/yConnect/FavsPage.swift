@@ -1,13 +1,13 @@
 //
-//  SeachPage.swift
+//  FavsPage.swift
 //  yConnect
 //
-//  Created by Alumno on 02/10/23.
+//  Created by Alumno on 09/10/23.
 //
 
 import SwiftUI
 
-struct SearchPage: View {
+struct FavsPage: View {
     
     var organizationModel = OrganizationModel()
     

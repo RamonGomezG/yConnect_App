@@ -60,7 +60,7 @@ struct OrgInfoView: View {
                             }
                         }
                     }
-                    .padding(.horizontal, 14)
+                    .padding(.horizontal, 18)
                     .padding(.top, 5)
                     Button(action: {
                         isFavorite.toggle()}) {

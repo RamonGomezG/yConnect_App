@@ -13,7 +13,7 @@ struct ContentView: View {
     //Si se guardo el commit
     var body: some View {
         NavigationView {
-            StartView()
+            SearchPage()
         }
         
     }
