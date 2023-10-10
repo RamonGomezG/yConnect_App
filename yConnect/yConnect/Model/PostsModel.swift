@@ -48,4 +48,32 @@ class PostsModel {
         }
         
     }
+    
+    func fetchPostsWithOrgaizationIGURL (url: String) {
+        posts.removeAll()
+        let urlTest = "https://feeds.behold.so/MhRvn7072MMN2Ac2KKMy"
+        
+        AF.request(urlTest).response { data in
+            //debugPrint(data)
+            
+             let json = try! JSON(data: data.data!)
+            debugPrint(json)
+            
+            
+            /*
+            for p in json["data"] {
+                let post = Posts(
+                    id: p.1["Image"].stringValue,
+                    User: p.1["User"].stringValue,
+                    Caption: p.1["Caption"].stringValue,
+                    Image: p.1["Image"].stringValue
+                )
+                self.posts.append(post)
+                
+            }
+             */
+            
+        }
+        
+    }
 }

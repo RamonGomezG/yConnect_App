@@ -48,6 +48,7 @@
 		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
+		FBE1BF002AD4C79B00A5FA07 /* OrganizationPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgView.swift; sourceTree = "<group>"; };
 		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
+		FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationPostsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
 				FB99EF962AB90779009441FD /* ExploreView.swift */,
 				FB106E222AC23DB600B2781E /* PostsView.swift */,
+				FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */,
 				FB106E242AC2411600B2781E /* PostItemView.swift */,
 				DB3349BC2AC3B48B00F99430 /* ImageView.swift */,
 				DB3349BE2AC3BA3500F99430 /* VideosView.swift */,
@@ -303,6 +306,7 @@
 				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
 				FBA740A92ACB8FB200123543 /* Tag.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
+				FBE1BF002AD4C79B00A5FA07 /* OrganizationPostsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

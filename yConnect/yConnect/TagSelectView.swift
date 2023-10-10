@@ -74,7 +74,7 @@ struct TagSelectView: View {
                 }
             }.navigationBarBackButtonHidden(true)
         }
-    }
+    }  
 
 
 #Preview {

@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ExploreView: View {
-    var user: Users
+    @State var user: Users
     
     var body: some View {
         ZStack{
