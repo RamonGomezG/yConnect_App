@@ -37,11 +37,11 @@ struct OrganizationPostsView: View {
                     .padding(.top, 1)
                 
                 //Despliegue de posts
-                /*
+                
                 ForEach(postsModel.posts) { post in
                     PostItemView(post: post)
                 }
-                 */
+                 
                 
             }
             
@@ -49,7 +49,7 @@ struct OrganizationPostsView: View {
         .navigationBarBackButtonHidden(false)
         .onAppear{
             postsModel.fetchPostsWithOrgaizationIGURL(url: "")
-            debugPrint("hola")
+            debugPrint("fetching...")
         }
     }
 }
