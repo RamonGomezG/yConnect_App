@@ -31,7 +31,7 @@ struct OrganizationPostsView: View {
                     }
                 }
                 
-                Text("Publicaciones")
+                Text("Publicaciones prueba")
                     .font(.title)
                     .foregroundStyle(Color.principalDarker)
                     .padding(.top, 1)
