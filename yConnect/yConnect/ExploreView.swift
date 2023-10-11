@@ -56,5 +56,5 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView(user: Users(Telephone: "23123123"))
+    ExploreView(user: Users.userDummy)
 }

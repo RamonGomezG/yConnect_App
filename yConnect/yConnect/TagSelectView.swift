@@ -78,5 +78,5 @@ struct TagSelectView: View {
 
 
 #Preview {
-    TagSelectView(user: Users(Telephone: "123123"))
+    TagSelectView(user: Users.userDummy)
 }

@@ -20,7 +20,7 @@ class PostsModel {
     
     func fetchPostsWithTags(user: Users) {
         posts.removeAll()
-        let userTags = user.UserTags
+        let userTags = user.Tags
         
         let url = "http://10.14.255.174:3000/posts/ig/getFromTag" //revisar si no se tienen que cumplir tooodos los tags porque eso limitaria los resultados a solo los que tienen exactamente la misma combinacion
         

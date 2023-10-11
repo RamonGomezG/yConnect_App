@@ -10,31 +10,38 @@ import SwiftData
 
 @Model
 final class Users {
+    
     var id: String
     var Name: String
     var Telephone: String
-    //var Email: String
-    var AboutMe: String //Description
-    var UserTags: Tags
-    var Favourites: [String]
-    //var Password: string
+    var Email: String
+    var DescriptionA: String
+    var Tags: [String]
+    var Favorites: [String]
+    var Password: String
     
-    init(Telephone: String) {
-        self.id = Telephone
+    init(id: String, Name: String, Telephone: String, Email: String, DescriptionA: String, Tags: [String], Favorites: [String], Password: String ) {
+        self.id = id
         self.Telephone = Telephone
-        self.Name = "empty"
-        self.AboutMe = "empty"
-        self.UserTags = Tags(Tags: ["empty"])
-        self.Favourites = ["empty"]
+        self.Name = ""
+        self.Email = ""
+        self.DescriptionA = ""
+        self.Tags = [""]
+        self.Favorites = [""]
+        self.Password = ""
+        
     }
 }
 
 extension Users {
     static var userDummy = Users(
-        //Name: "User Dummy",
-        Telephone: "81 28382828"
-        //Description: "Soy un usuario creado para probar la aplicación",
-        //UserTags: Tags(Tags: ["Autismo", "Niños", "Terapia"]),
-        //Favourites: ["Arena", "yCo"]
+        id: "123",
+        Name: "yConnection",
+        Telephone: "866172672",
+        Email: "yconnection@gmail.com",
+        DescriptionA: "Aplicacion movil de conecxión con OSCs",
+        Tags: ["Autismo", "Terapia"],
+        Favorites: ["Uno", "Dos"],
+        Password: "contraseña123"
     )
 }

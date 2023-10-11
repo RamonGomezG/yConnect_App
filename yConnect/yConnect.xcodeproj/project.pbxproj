@@ -22,6 +22,14 @@
 		FB106E342AC25C0500B2781E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FB106E332AC25C0500B2781E /* SwiftyJSON */; };
 		FB1626572ABA56E30060C52A /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1626562ABA56E30060C52A /* StartView.swift */; };
 		FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1626582ABA5BD40060C52A /* LogInView.swift */; };
+		FB17FC4D2AD632ED0020BC81 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC4C2AD632ED0020BC81 /* SearchPage.swift */; };
+		FB17FC4F2AD632F50020BC81 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC4E2AD632F50020BC81 /* UserModel.swift */; };
+		FB17FC512AD632FB0020BC81 /* FavsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC502AD632FB0020BC81 /* FavsPage.swift */; };
+		FB17FC532AD633040020BC81 /* DemoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC522AD633040020BC81 /* DemoTag.swift */; };
+		FB17FC552AD6330C0020BC81 /* OrgInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC542AD6330C0020BC81 /* OrgInfoView.swift */; };
+		FB17FC572AD633900020BC81 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC562AD633900020BC81 /* ShareButtonView.swift */; };
+		FB17FC592AD633970020BC81 /* CallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC582AD633970020BC81 /* CallButtonView.swift */; };
+		FB17FC5B2AD6339F0020BC81 /* DirectionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC5A2AD6339F0020BC81 /* DirectionButtonView.swift */; };
 		FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB50086E2ABD0B3800028EEB /* TagSelectView.swift */; };
 		FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008702ABD0D1C00028EEB /* TagComponent.swift */; };
 		FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008722ABD127B00028EEB /* ButtonComponent.swift */; };
@@ -64,6 +72,14 @@
 		FB106E2D2AC258A000B2781E /* OrganizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationModel.swift; sourceTree = "<group>"; };
 		FB1626562ABA56E30060C52A /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		FB1626582ABA5BD40060C52A /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		FB17FC4C2AD632ED0020BC81 /* SearchPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		FB17FC4E2AD632F50020BC81 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FB17FC502AD632FB0020BC81 /* FavsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavsPage.swift; sourceTree = "<group>"; };
+		FB17FC522AD633040020BC81 /* DemoTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTag.swift; sourceTree = "<group>"; };
+		FB17FC542AD6330C0020BC81 /* OrgInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrgInfoView.swift; path = ../../../../../Downloads/App/OrgInfoView.swift; sourceTree = "<group>"; };
+		FB17FC562AD633900020BC81 /* ShareButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareButtonView.swift; path = ../../../../../Downloads/ShareButtonView.swift; sourceTree = "<group>"; };
+		FB17FC582AD633970020BC81 /* CallButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CallButtonView.swift; path = ../../../../../Downloads/CallButtonView.swift; sourceTree = "<group>"; };
+		FB17FC5A2AD6339F0020BC81 /* DirectionButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectionButtonView.swift; path = ../../../../../Downloads/DirectionButtonView.swift; sourceTree = "<group>"; };
 		FB50086E2ABD0B3800028EEB /* TagSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectView.swift; sourceTree = "<group>"; };
 		FB5008702ABD0D1C00028EEB /* TagComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagComponent.swift; sourceTree = "<group>"; };
 		FB5008722ABD127B00028EEB /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
@@ -115,6 +131,7 @@
 			children = (
 				FB106E272AC24F0200B2781E /* Organization.swift */,
 				FB106E292AC2548100B2781E /* Posts.swift */,
+				FB17FC4E2AD632F50020BC81 /* UserModel.swift */,
 				FB106E2B2AC2561D00B2781E /* Users.swift */,
 				FB106E2D2AC258A000B2781E /* OrganizationModel.swift */,
 				FB8F33042AC653E5007B41D7 /* PostsModel.swift */,
@@ -147,9 +164,16 @@
 				FB6CB5252AC786CF006C08ED /* Info.plist */,
 				FB106E262AC24EE000B2781E /* Model */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
+				FB17FC4C2AD632ED0020BC81 /* SearchPage.swift */,
+				FB17FC582AD633970020BC81 /* CallButtonView.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
+				FB17FC522AD633040020BC81 /* DemoTag.swift */,
+				FB17FC542AD6330C0020BC81 /* OrgInfoView.swift */,
+				FB17FC562AD633900020BC81 /* ShareButtonView.swift */,
 				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
+				FB17FC502AD632FB0020BC81 /* FavsPage.swift */,
 				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
+				FB17FC5A2AD6339F0020BC81 /* DirectionButtonView.swift */,
 				FB5008702ABD0D1C00028EEB /* TagComponent.swift */,
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
@@ -280,9 +304,12 @@
 				FB8F33052AC653E5007B41D7 /* PostsModel.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
+				FB17FC532AD633040020BC81 /* DemoTag.swift in Sources */,
 				FB106E252AC2411600B2781E /* PostItemView.swift in Sources */,
 				FB106E282AC24F0200B2781E /* Organization.swift in Sources */,
 				FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */,
+				FB17FC552AD6330C0020BC81 /* OrgInfoView.swift in Sources */,
+				FB17FC4F2AD632F50020BC81 /* UserModel.swift in Sources */,
 				FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */,
 				FBA740AD2ACB93ED00123543 /* TaskSearchBarComponent.swift in Sources */,
 				FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */,
@@ -290,14 +317,19 @@
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,
 				FBA740AB2ACB918B00123543 /* TagModel.swift in Sources */,
 				FB99EF9E2AB90FE4009441FD /* SectionView.swift in Sources */,
+				FB17FC512AD632FB0020BC81 /* FavsPage.swift in Sources */,
 				FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */,
+				FB17FC5B2AD6339F0020BC81 /* DirectionButtonView.swift in Sources */,
 				FB106E2C2AC2561D00B2781E /* Users.swift in Sources */,
 				FB106E2E2AC258A000B2781E /* OrganizationModel.swift in Sources */,
 				FB8F33072AC657FA007B41D7 /* Tags.swift in Sources */,
 				FB99EF972AB90779009441FD /* ExploreView.swift in Sources */,
+				FB17FC572AD633900020BC81 /* ShareButtonView.swift in Sources */,
 				DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
+				FB17FC4D2AD632ED0020BC81 /* SearchPage.swift in Sources */,
+				FB17FC592AD633970020BC81 /* CallButtonView.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
