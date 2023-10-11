@@ -42,6 +42,7 @@
 		FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5B2AC63E58001CC506 /* MyButton.swift */; };
 		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
+		FBB79C452AD4FDB3001C1541 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FBB79C442AD4FDB3001C1541 /* Alamofire */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
 		FBDBF0C92AC7705600615B7E /* RegistroPersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBF0C82AC7705500615B7E /* RegistroPersView.swift */; };
 		FBDBF0CB2AC7742D00615B7E /* TagsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBF0CA2AC7742D00615B7E /* TagsButton.swift */; };
@@ -97,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB3349BB2AC3B44100F99430 /* Kingfisher in Frameworks */,
+				FBB79C452AD4FDB3001C1541 /* Alamofire in Frameworks */,
 				FB106E342AC25C0500B2781E /* SwiftyJSON in Frameworks */,
 				FB106E312AC25B9A00B2781E /* Alamofire in Frameworks */,
 			);
@@ -202,6 +204,7 @@
 				FB106E302AC25B9A00B2781E /* Alamofire */,
 				FB106E332AC25C0500B2781E /* SwiftyJSON */,
 				DB3349BA2AC3B44100F99430 /* Kingfisher */,
+				FBB79C442AD4FDB3001C1541 /* Alamofire */,
 			);
 			productName = yConnect;
 			productReference = FB99EF832AB8F9A7009441FD /* yConnect.app */;
@@ -545,6 +548,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FB106E322AC25C0500B2781E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		FBB79C442AD4FDB3001C1541 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB106E2F2AC25B9A00B2781E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

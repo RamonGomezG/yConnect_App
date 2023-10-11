@@ -10,16 +10,28 @@ import SwiftUI
 struct MyButton: View {
     let title: String
     let action: () -> Void
+    @State private var showAlert = false
 //    let backgroundColor: Color
 
     var body: some View {
-        Button(action: action) {
+        Button(action: {
+            showAlert = true
+        }) {
             Text(title)
                 .foregroundColor(.white)
                 .font(.title)
                 .padding()
 //                .background(backgroundColor)
                 .cornerRadius(10)
+        }
+        .alert(isPresented: $showAlert){
+            Alert(
+                title: Text("Datos actualizados"),
+                message: Text(""),
+                dismissButton: .default(Text("Cerrar")){
+                    action()
+                }
+            )
         }
     }
 }
