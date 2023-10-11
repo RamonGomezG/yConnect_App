@@ -30,7 +30,7 @@ struct FavsPage: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            organizationModel.fetchOrganizations()
+            organizationModel.fetchAllOrganizations() //cambiar
         }
     }
 }

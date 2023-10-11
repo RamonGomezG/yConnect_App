@@ -18,7 +18,7 @@ struct OrgInfoView: View {
         ZStack{
             Color("BackColor")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            VStack(alignment: .leading, spacing: 10){
+            VStack(spacing: 10){
                 HStack(spacing: 10){
                     Spacer()
                     Image("Image1")
@@ -38,18 +38,19 @@ struct OrgInfoView: View {
                         .padding(.top, 15)
                     Spacer()
                 }
-                VStack {
-                    Text("\(Org_Name)")
-                        .font(.system(size: 20))
-                        .padding(.top, 5)
-                        .foregroundStyle(Color("TitleColor"))
-                    
-                    Text("\(Org_Des)")
-                        .font(.system(size: 10))
-                        .padding(.top, 2)
-                        .foregroundStyle(.black)
-                }
-                .padding(.horizontal, 15)
+                
+                Text("\(Org_Name)")
+                    .multilineTextAlignment(.leading)
+                    .frame(width: 300)
+                    .font(.system(size: 20))
+                    .padding(.top, 5)
+                    .foregroundStyle(Color("TitleColor"))
+            
+                Text("\(Org_Des)")
+                    .font(.system(size: 10))
+                    .padding(.top, 2)
+                    .foregroundStyle(.black)
+                
                 HStack{
                     Text(String(format: "%.1f", Org_Calf))
                         .font(.system(size: 20))
@@ -92,5 +93,5 @@ struct OrgInfoView: View {
 }
 
 #Preview {
-    OrgInfoView(Org_Name: "Arena (Atención Integral del Autismo)", Org_Des: "Atención Integral del Autismo. Terapias especializadas y servicio de evaluación y diagnostico de Autismo y Asperger", Org_Calf: 3)
+    OrgInfoView(Org_Name: "Arena", Org_Des: "Atención Integral del Autismo. Terapias especializadas y servicio de evaluación y diagnostico de Autismo y Asperger", Org_Calf: 3)
 }

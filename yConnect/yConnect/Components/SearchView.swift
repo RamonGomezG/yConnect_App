@@ -42,7 +42,7 @@ struct SearchView: View {
             }
             .font(.headline)
             .padding()
-        NavigationLink(destination: OrganizationPostsView(organization: Organization.dummy), isActive: $isActive) {
+        NavigationLink(destination: SearchPage(), isActive: $isActive) {
                                 EmptyView()
                             }
                 

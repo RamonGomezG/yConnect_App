@@ -18,8 +18,12 @@ struct SearchPage: View {
             if organizationModel.organizations.count > 0 {
                 ScrollView{
                     ForEach(organizationModel.organizations, id: \.id) { org in
-                        OrgInfoView(Org_Name: org.Name, Org_Des: org.Description, Org_Calf: 0.0)
-                        .padding(.bottom, 3)
+                        NavigationLink {
+                            OrgProfileView(organization: Organization.dummy)
+                        } label: {
+                            OrgInfoView(Org_Name: org.Name, Org_Des: org.Description, Org_Calf: 0.0)
+                            .padding(.bottom, 3)
+                        }
                     }
                 }
             } else {
@@ -30,7 +34,7 @@ struct SearchPage: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            organizationModel.fetchOrganizations()
+            organizationModel.fetchAllOrganizations()
         }
     }
 }

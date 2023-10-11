@@ -43,6 +43,7 @@ struct ExploreView: View {
                     }
                     //Text("Hola \(user.Telephone)")
                     VStack{
+                        Spacer().frame(height: 25)
                         NavigationLink {
                             PostsView()
                         } label: {

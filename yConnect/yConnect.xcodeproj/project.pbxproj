@@ -30,6 +30,7 @@
 		FB17FC5F2AD63D910020BC81 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC5E2AD63D910020BC81 /* ShareButtonView.swift */; };
 		FB17FC612AD63D9A0020BC81 /* OrgInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */; };
 		FB17FC632AD63DA70020BC81 /* CallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB17FC622AD63DA70020BC81 /* CallButtonView.swift */; };
+		FB274C3F2AD757AA005F6289 /* OrgProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB274C3E2AD757AA005F6289 /* OrgProfileView.swift */; };
 		FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB50086E2ABD0B3800028EEB /* TagSelectView.swift */; };
 		FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008702ABD0D1C00028EEB /* TagComponent.swift */; };
 		FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008722ABD127B00028EEB /* ButtonComponent.swift */; };
@@ -79,6 +80,7 @@
 		FB17FC5E2AD63D910020BC81 /* ShareButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
 		FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgInfoView.swift; sourceTree = "<group>"; };
 		FB17FC622AD63DA70020BC81 /* CallButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallButtonView.swift; sourceTree = "<group>"; };
+		FB274C3E2AD757AA005F6289 /* OrgProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgProfileView.swift; sourceTree = "<group>"; };
 		FB50086E2ABD0B3800028EEB /* TagSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectView.swift; sourceTree = "<group>"; };
 		FB5008702ABD0D1C00028EEB /* TagComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagComponent.swift; sourceTree = "<group>"; };
 		FB5008722ABD127B00028EEB /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				FB106E242AC2411600B2781E /* PostItemView.swift */,
 				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
 				FB17FC522AD633040020BC81 /* DemoTag.swift */,
+				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
 				DB3349C22AC3C09800F99430 /* VideoItemView.swift */,
 				DB3349C02AC3BAB500F99430 /* VideoView.swift */,
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
@@ -166,6 +169,7 @@
 		FB274C3D2AD73AB9005F6289 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB1626562ABA56E30060C52A /* StartView.swift */,
 				FB1626582ABA5BD40060C52A /* LogInView.swift */,
 				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
@@ -174,8 +178,8 @@
 				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
 				FB106E222AC23DB600B2781E /* PostsView.swift */,
 				FB17FC502AD632FB0020BC81 /* FavsPage.swift */,
+				FB274C3E2AD757AA005F6289 /* OrgProfileView.swift */,
 				FB17FC4C2AD632ED0020BC81 /* SearchPage.swift */,
-				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
 				FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */,
 				DB3349BE2AC3BA3500F99430 /* VideosView.swift */,
 			);
@@ -206,7 +210,6 @@
 				FB106E262AC24EE000B2781E /* Model */,
 				FB274C3D2AD73AB9005F6289 /* Views */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
-				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
 				FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */,
 				FB99EF9B2AB90B79009441FD /* imagen2.jpeg */,
 				FB99EFA32AB9209F009441FD /* yConnect.svg */,
@@ -323,6 +326,7 @@
 				FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */,
 				FB17FC4F2AD632F50020BC81 /* UserModel.swift in Sources */,
 				FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */,
+				FB274C3F2AD757AA005F6289 /* OrgProfileView.swift in Sources */,
 				FBA740AD2ACB93ED00123543 /* TaskSearchBarComponent.swift in Sources */,
 				FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */,
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,

@@ -45,8 +45,7 @@ struct PostsView: View {
         }
         .navigationBarBackButtonHidden(false)
         .onAppear{
-            postsModel.fetchPostsWithTags(
-                user: Users.userDummy)
+            postsModel.fetchPostsWithOrgaizationIGURL(url: "")
         }
     }
 }
