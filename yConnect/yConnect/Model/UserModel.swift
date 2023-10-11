@@ -22,7 +22,7 @@ class UserModel {
     func fetchFavorites() {
         users.removeAll()
         
-        let url = "http://10.14.255.174:3000/users"
+        let url = "http://10.14.255.175:3000/users"
         
         AF.request(url,method: .get).response { [self] data in
             let json = try! JSON(data: data.data!)

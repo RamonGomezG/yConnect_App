@@ -22,7 +22,7 @@ class OrganizationModel {
     func fetchOrganizations() {
         organizations.removeAll()
         
-        let url = "http://10.14.255.174:3000/organizations"
+        let url = "http://10.14.255.175:3000/organizations"
         
         AF.request(url,method: .get).response { [self] data in
             let json = try! JSON(data: data.data!)

@@ -9,19 +9,19 @@ import SwiftUI
 
 struct FavsPage: View {
     
-    var organizationModel = OrganizationModel()
+    var usermodel = UserModel()
     
     var body: some View {
         VStack(spacing: 0){
             SearchView()
                 .background(Color("BackColor"))
-            if organizationModel.organizations.count > 0 {
+            if usermodel.users.count > 0 {
                 ScrollView{
-                    ForEach(organizationModel.organizations, id: \.id) { org in
+                    ForEach(usermodel.users, id: \.id) { user in
                         OrgInfoView(
-                            Org_Name: org.Name,
-                            Org_Des: org.Description,
-                            Org_Tags: org.Tags)
+                            Org_Name: user.Name,
+                            Org_Des: user.Description,
+                            Org_Tags: user.Tags)
                         .padding(.bottom, 3)
                     }
                 }
@@ -33,7 +33,7 @@ struct FavsPage: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            organizationModel.fetchOrganizations()
+            usermodel.fetchFavorites()
         }
     }
 }

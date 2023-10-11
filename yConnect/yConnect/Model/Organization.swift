@@ -22,7 +22,7 @@ struct Organization: Identifiable {
 extension Organization {
     
     static var dummy = Organization(
-        id:"pollolokooficial",
+        id:"6525f0799babfbb504d62fb9",
         Name: "yCo Foundation",
         Location: "Av. Del Estado 208, Tecnológico, 64700 Monterrey, N.L.",
         Description: "Somos una comunidad de innovación, que cuenta con espacio físico de encuentro, fortalecimiento y acción colectiva, para generar impacto social.",
