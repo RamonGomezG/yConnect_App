@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ExploreView: View {
+    @State var user: Users
+    
     var body: some View {
         ZStack{
             Color.colorPrincipal.ignoresSafeArea()
@@ -26,6 +29,7 @@ struct ExploreView: View {
                         .padding(.trailing, -15)
                         SearchView()
                     }
+                    Text("Hola \(user.Telephone)")
                     HStack{
                         NavigationLink {
                             PostsView()
@@ -52,5 +56,5 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView()
+    ExploreView(user: Users(Telephone: "23123123"))
 }
