@@ -89,6 +89,7 @@ struct RegistroOrgView: View {
                 .background(RoundedRectangle(cornerRadius: 25.0)
                     .fill(.white)
                     .shadow(color: .black.opacity(0.15),radius: 10, x:0, y: 0))
+            Spacer()
             }
             .padding()
             Spacer()
