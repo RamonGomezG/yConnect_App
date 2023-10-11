@@ -65,7 +65,7 @@ struct ConfirmCodeView: View {
                 .cornerRadius(10)
             }.navigationBarBackButtonHidden(true)
         } else {
-            TagSelectView(user: user[0])
+            TagSelectView()
         }
     }
         

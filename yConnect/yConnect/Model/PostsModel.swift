@@ -52,7 +52,7 @@ class PostsModel {
     func fetchPostsWithOrgaizationIGURL (url: String) {
         posts.removeAll()
         let user = "dummy"
-        let urlTest = "https://feeds.behold.so/MhRvn7072MMN2Ac2KKMy"
+        let urlTest = "https://feeds.behold.so/lmZc1NaZcbdrO2InKahF"
         
         AF.request(urlTest).response { data in
             //debugPrint(data)

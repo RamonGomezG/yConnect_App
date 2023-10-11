@@ -10,11 +10,16 @@ import SwiftUI
 struct SearchView: View {
     
     @State var searchText: String = ""
+    @State private var isActive = false
+    
     var body: some View {
             HStack{
                 HStack {
                     Image(systemName: "magnifyingglass")
-                    TextField("En qué te podemos ayudar?...", text: $searchText)
+                    TextField(
+                        "En qué te podemos ayudar?...",
+                        text: $searchText,
+                        onCommit: {onSearch(searchText: searchText)})
                     Spacer()
                         .foregroundColor(.blue)
                         .overlay(
@@ -37,7 +42,16 @@ struct SearchView: View {
             }
             .font(.headline)
             .padding()
+        NavigationLink(destination: OrganizationPostsView(organization: Organization.dummy), isActive: $isActive) {
+                                EmptyView()
+                            }
                 
+    }
+    
+    func onSearch(searchText: String) {
+        // Aquí puedes poner el código para realizar la búsqueda
+        // Luego, cuando quieras redirigir a otra pantalla, puedes activar isActive
+        isActive = true
     }
 }
 

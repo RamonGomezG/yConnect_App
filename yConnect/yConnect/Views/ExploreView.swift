@@ -9,7 +9,19 @@ import SwiftUI
 import SwiftData
 
 struct ExploreView: View {
-    @State var user: Users
+    //@State var user: Users
+    /*var user = Users(
+        id: "123",
+        Name: "yConnection",
+        Telephone: "866172672",
+        Email: "yconnection@gmail.com",
+        DescriptionA: "Aplicacion movil de conecxión con OSCs",
+        Tags: ["Autismo", "Terapia"],
+        Favorites: ["Uno", "Dos"],
+        Password: "contraseña123"
+    )*/
+    
+    @State private var isActive = false
     
     var body: some View {
         ZStack{
@@ -29,25 +41,21 @@ struct ExploreView: View {
                         .padding(.trailing, -15)
                         SearchView()
                     }
-                    Text("Hola \(user.Telephone)")
-                    HStack{
+                    //Text("Hola \(user.Telephone)")
+                    VStack{
                         NavigationLink {
                             PostsView()
                         } label: {
-                            SectionView(title: "Publicaciones", imageName: "imagen1")
+                            SectionView(title: "Publicaciones", imageName: "imagen1").foregroundColor(.principalDarker)
                         }
                         
                         NavigationLink {
                             VideosView()
                         } label: {
-                            SectionView(title: "Videos", imageName: "imagen2")
+                            SectionView(title: "Videos", imageName: "imagen2").foregroundColor(.principalDarker)
                         }
-                        
                     }
-                    HStack{
-                        SectionView(title: "Sugerencias", imageName: "imagen4")
-                        SectionView(title: "Eventos", imageName: "imagen6")
-                    }
+                    
                 }
             }
         }.navigationBarBackButtonHidden(true)
@@ -56,5 +64,7 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView(user: Users.userDummy)
+    ExploreView(
+        //user: Users.userDummy
+    )
 }

@@ -37,7 +37,6 @@
 		FB8F33072AC657FA007B41D7 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33062AC657FA007B41D7 /* Tags.swift */; };
 		FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF862AB8F9A7009441FD /* yConnectApp.swift */; };
 		FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF882AB8F9A7009441FD /* ContentView.swift */; };
-		FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF8A2AB8F9A7009441FD /* Item.swift */; };
 		FB99EF8D2AB8F9A9009441FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */; };
 		FB99EF902AB8F9A9009441FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB99EF8F2AB8F9A9009441FD /* Preview Assets.xcassets */; };
 		FB99EF972AB90779009441FD /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF962AB90779009441FD /* ExploreView.swift */; };
@@ -89,7 +88,6 @@
 		FB99EF832AB8F9A7009441FD /* yConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99EF862AB8F9A7009441FD /* yConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yConnectApp.swift; sourceTree = "<group>"; };
 		FB99EF882AB8F9A7009441FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FB99EF8A2AB8F9A7009441FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB99EF8F2AB8F9A9009441FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB99EF962AB90779009441FD /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -142,6 +140,48 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FB274C3C2AD73A42005F6289 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FB99EFA12AB9194F009441FD /* SearchView.swift */,
+				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
+				DB3349BC2AC3B48B00F99430 /* ImageView.swift */,
+				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
+				FB17FC622AD63DA70020BC81 /* CallButtonView.swift */,
+				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
+				FB5008702ABD0D1C00028EEB /* TagComponent.swift */,
+				FB17FC5E2AD63D910020BC81 /* ShareButtonView.swift */,
+				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
+				FB17FC5C2AD63D830020BC81 /* DirectionButtonView.swift */,
+				FB106E242AC2411600B2781E /* PostItemView.swift */,
+				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
+				FB17FC522AD633040020BC81 /* DemoTag.swift */,
+				DB3349C22AC3C09800F99430 /* VideoItemView.swift */,
+				DB3349C02AC3BAB500F99430 /* VideoView.swift */,
+				FB99EFA72AB922C4009441FD /* LogoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FB274C3D2AD73AB9005F6289 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB1626562ABA56E30060C52A /* StartView.swift */,
+				FB1626582ABA5BD40060C52A /* LogInView.swift */,
+				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
+				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
+				FB99EF962AB90779009441FD /* ExploreView.swift */,
+				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
+				FB106E222AC23DB600B2781E /* PostsView.swift */,
+				FB17FC502AD632FB0020BC81 /* FavsPage.swift */,
+				FB17FC4C2AD632ED0020BC81 /* SearchPage.swift */,
+				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
+				FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */,
+				DB3349BE2AC3BA3500F99430 /* VideosView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FB99EF7A2AB8F9A7009441FD = {
 			isa = PBXGroup;
 			children = (
@@ -162,41 +202,14 @@
 			isa = PBXGroup;
 			children = (
 				FB6CB5252AC786CF006C08ED /* Info.plist */,
+				FB274C3C2AD73A42005F6289 /* Components */,
 				FB106E262AC24EE000B2781E /* Model */,
+				FB274C3D2AD73AB9005F6289 /* Views */,
 				FB99EF862AB8F9A7009441FD /* yConnectApp.swift */,
-				FB17FC4C2AD632ED0020BC81 /* SearchPage.swift */,
 				FB99EF882AB8F9A7009441FD /* ContentView.swift */,
-				FB17FC522AD633040020BC81 /* DemoTag.swift */,
-				FB50086E2ABD0B3800028EEB /* TagSelectView.swift */,
-				FB17FC502AD632FB0020BC81 /* FavsPage.swift */,
-				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
-				FB5008702ABD0D1C00028EEB /* TagComponent.swift */,
-				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
-				FB17FC5C2AD63D830020BC81 /* DirectionButtonView.swift */,
-				FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */,
-				FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */,
-				FB17FC622AD63DA70020BC81 /* CallButtonView.swift */,
-				FB17FC5E2AD63D910020BC81 /* ShareButtonView.swift */,
-				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
-				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
-				FB1626562ABA56E30060C52A /* StartView.swift */,
-				FB1626582ABA5BD40060C52A /* LogInView.swift */,
-				FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */,
-				FB99EF962AB90779009441FD /* ExploreView.swift */,
-				FB106E222AC23DB600B2781E /* PostsView.swift */,
-				FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */,
-				FB106E242AC2411600B2781E /* PostItemView.swift */,
-				DB3349BC2AC3B48B00F99430 /* ImageView.swift */,
-				DB3349BE2AC3BA3500F99430 /* VideosView.swift */,
-				DB3349C02AC3BAB500F99430 /* VideoView.swift */,
-				DB3349C22AC3C09800F99430 /* VideoItemView.swift */,
-				FB99EFA72AB922C4009441FD /* LogoView.swift */,
-				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
-				FB99EFA12AB9194F009441FD /* SearchView.swift */,
-				FB99EF8A2AB8F9A7009441FD /* Item.swift */,
 				FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */,
-				FB99EFA32AB9209F009441FD /* yConnect.svg */,
 				FB99EF9B2AB90B79009441FD /* imagen2.jpeg */,
+				FB99EFA32AB9209F009441FD /* yConnect.svg */,
 				FB99EF9F2AB91259009441FD /* imagen4.jpeg */,
 				FB99EF9A2AB90ACF009441FD /* imagen3.webp */,
 				FB99EFA92AB92611009441FD /* imagen6.png */,
@@ -311,7 +324,6 @@
 				FB17FC4F2AD632F50020BC81 /* UserModel.swift in Sources */,
 				FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */,
 				FBA740AD2ACB93ED00123543 /* TaskSearchBarComponent.swift in Sources */,
-				FB99EF8B2AB8F9A7009441FD /* Item.swift in Sources */,
 				FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */,
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,
 				FB17FC612AD63D9A0020BC81 /* OrgInfoView.swift in Sources */,

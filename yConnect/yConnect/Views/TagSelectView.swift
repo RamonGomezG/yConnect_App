@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TagSelectView: View {
         @StateObject var viewModel = TagModel()
-        var user: Users
+        //var user: Users
         
         var body: some View {
             ZStack {
@@ -65,7 +65,7 @@ struct TagSelectView: View {
                         }
                         .padding(24)
                         NavigationLink {
-                            ExploreView(user: user)
+                            ExploreView()
                         } label: {
                             ButtonComponent(title: "Continuar")
                         }
@@ -78,5 +78,5 @@ struct TagSelectView: View {
 
 
 #Preview {
-    TagSelectView(user: Users.userDummy)
+    TagSelectView()
 }
