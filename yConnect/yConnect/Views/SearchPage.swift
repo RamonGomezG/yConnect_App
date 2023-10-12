@@ -18,10 +18,13 @@ struct SearchPage: View {
             if organizationModel.organizations.count > 0 {
                 ScrollView{
                     ForEach(organizationModel.organizations, id: \.id) { org in
-                        NavigationLink {
+                        NavigationLink{
                             OrgProfileView(organization: Organization.dummy)
                         } label: {
-                            OrgInfoView(Org_Name: org.Name, Org_Des: org.Description, Org_Calf: 0.0)
+                            OrgInfoView(
+                                Org_Name: org.Name,
+                                Org_Des: org.Description,
+                                Org_Tags: org.Tags)
                             .padding(.bottom, 3)
                         }
                     }

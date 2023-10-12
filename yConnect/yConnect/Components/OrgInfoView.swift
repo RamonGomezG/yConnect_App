@@ -11,14 +11,14 @@ struct OrgInfoView: View {
     
     @State var Org_Name: String
     @State var Org_Des: String
-    @State var Org_Calf: Float
+    @State var Org_Tags: [String]
     @State var isFavorite: Bool = false
     
     var body: some View {
         ZStack{
             Color("BackColor")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            VStack(spacing: 10){
+            VStack(alignment: .leading, spacing: 10){
                 HStack(spacing: 10){
                     Spacer()
                     Image("Image1")
@@ -38,30 +38,30 @@ struct OrgInfoView: View {
                         .padding(.top, 15)
                     Spacer()
                 }
-                
-                Text("\(Org_Name)")
-                    .multilineTextAlignment(.leading)
-                    .frame(width: 300)
-                    .font(.system(size: 20))
-                    .padding(.top, 5)
-                    .foregroundStyle(Color("TitleColor"))
-            
-                Text("\(Org_Des)")
-                    .font(.system(size: 10))
-                    .padding(.top, 2)
-                    .foregroundStyle(.black)
-                
-                HStack{
-                    Text(String(format: "%.1f", Org_Calf))
+                VStack {
+                    Text("\(Org_Name)")
                         .font(.system(size: 20))
+                        .padding(.top, 3)
+                        .padding(.bottom, 5)
                         .foregroundStyle(Color("TitleColor"))
-                    ForEach(0..<5, id: \.self){ index in
-                        Image(systemName: index < Int(Org_Calf) ? "star.fill" : "star")
-                            .resizable()
-                            .frame(width: 15, height: 15)
-                            .foregroundStyle(.yellow)
+                    
+                    Text("\(Org_Des)")
+                        .font(.system(size: 10))
+                        .foregroundStyle(.black)
+                }
+                .padding(.horizontal, 15)
+                HStack {
+                    ScrollView(.horizontal, showsIndicators: false){
+                        HStack{
+                            ForEach(Org_Tags, id: \.self) { tag in
+                                DemoTag(title: tag)
+                                    .font(.system(size: 14))
+                                    .foregroundStyle(Color("TitleColor"))
+                            }
+                        }
                     }
-                    Spacer()
+                    .padding(.horizontal, 18)
+                    .padding(.top, 5)
                     Button(action: {
                         isFavorite.toggle()}) {
                             Image(systemName: isFavorite ? "heart.fill" : "heart")
@@ -70,19 +70,19 @@ struct OrgInfoView: View {
                                 .foregroundStyle(isFavorite ? Color("BackColor") : Color("BackColor"))
                         }
                         .padding(.trailing, 20)
+                        .padding(.horizontal, 10)
+                        .padding(.top, 8)
                 }
-                .padding(.horizontal, 15)
-                .padding(.top, 2)
                 HStack(spacing: 5){
                     CallButtonView(phoneNumber: "6562465495", icon: "phone.fill")
                     ShareButtonView(shareText: "Apps", icon: "arrowshape.turn.up.right.fill")
-                    DirectionButtonView(address: "Av. Eugenio Garza Sada 2501 Sur, Tecnológico, 64849 Monterrey, N.L.", icon: "map.fill")
+                    DirectionButtonView(address: "Av. Eugenio Garza Sada Sur 2788, Alta Vista, 64840 Monterrey, N.L", icon: "map.fill")
                 }
                 .padding(.horizontal, 18)
-                .padding(.top, 10)
+                .padding(.top, 5)
                 .padding(.bottom, 10)
             }
-//            .padding(.horizontal, 80)
+            //            .padding(.horizontal, 80)
             .padding(.vertical, 10)
             .background(
                 RoundedRectangle(cornerRadius: 25)
@@ -93,5 +93,5 @@ struct OrgInfoView: View {
 }
 
 #Preview {
-    OrgInfoView(Org_Name: "Arena", Org_Des: "Atención Integral del Autismo. Terapias especializadas y servicio de evaluación y diagnostico de Autismo y Asperger", Org_Calf: 3)
+    OrgInfoView(Org_Name: "Arena (Atención Integral del Autismo)", Org_Des: "Atención Integral del Autismo. Terapias especializadas y servicio de evaluación y diagnostico de Autismo y Asperger", Org_Tags: ["Autismo", "Terapias", "Evaluación", "Detección Temprana"])
 }
