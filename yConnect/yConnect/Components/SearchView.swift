@@ -42,15 +42,33 @@ struct SearchView: View {
             }
             .font(.headline)
             .padding()
-        NavigationLink(destination: SearchPage(), isActive: $isActive) {
+        NavigationLink(destination: SearchPage(searchTags: searchEngine(texto: searchText)), isActive: $isActive) {
                                 EmptyView()
                             }
                 
     }
     
+    func searchEngine(texto: String) -> [String]{
+        var textoLow = texto.lowercased()
+        let tags = textoLow.components(separatedBy: " ")
+        return tags
+        
+    }
+    
+    /*func searchBy(texto: String) -> String {
+        let org = OrganizationModel()
+        
+        let grupoDeSubstrings = org.fetchAllOrganizationsNames()
+
+        if grupoDeSubstrings.contains(where: texto.contains) {
+            return "name"
+        }
+        else {
+            return "tags"
+        }
+    }*/
+    
     func onSearch(searchText: String) {
-        // Aquí puedes poner el código para realizar la búsqueda
-        // Luego, cuando quieras redirigir a otra pantalla, puedes activar isActive
         isActive = true
     }
 }

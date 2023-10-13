@@ -15,7 +15,7 @@ struct SectionView: View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 350, height: 280)
+            .frame(width: 350, height: 300)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .overlay(
                 VStack{
@@ -24,7 +24,7 @@ struct SectionView: View {
                         Text("\(title)")
                         .padding(.vertical, 5)
                         .padding(.horizontal, 10)
-                        .background(Color.white)
+                        .background(Color.white.opacity(0.85))
                         .clipShape(RoundedRectangle(cornerRadius: 25.0))
                         Spacer()
                     }

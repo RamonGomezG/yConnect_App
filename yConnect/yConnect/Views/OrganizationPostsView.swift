@@ -31,7 +31,7 @@ struct OrganizationPostsView: View {
                     }
                 }
                 
-                Text("Publicaciones prueba")
+                Text("Publicaciones")
                     .font(.title)
                     .foregroundStyle(Color.principalDarker)
                     .padding(.top, 1)
@@ -48,7 +48,7 @@ struct OrganizationPostsView: View {
         }
         .navigationBarBackButtonHidden(false)
         .onAppear{
-            postsModel.fetchPostsWithOrgaizationIGURL(url: "")
+            postsModel.fetchPostsWithOrgaizationIGURL(url: organization.Igtag, orgName: organization.Name)
             debugPrint("fetching...")
         }
     }

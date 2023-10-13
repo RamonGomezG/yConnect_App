@@ -18,7 +18,8 @@ class PostsModel {
         
     }
     
-    func fetchPostsWithTags(user: Users) {
+    /*
+     func fetchPostsWithTags(user: Users) {
         posts.removeAll()
         let userTags = user.Tags
         
@@ -48,13 +49,13 @@ class PostsModel {
         }
         
     }
+     */
     
-    func fetchPostsWithOrgaizationIGURL (url: String) {
+    func fetchPostsWithOrgaizationIGURL (url: String, orgName: String) {
         posts.removeAll()
-        let user = "dummy"
-        let urlTest = "https://feeds.behold.so/lmZc1NaZcbdrO2InKahF"
+        //let urlTest = "https://feeds.behold.so/lmZc1NaZcbdrO2InKahF"
         
-        AF.request(urlTest).response { data in
+        AF.request(url).response { data in
             //debugPrint(data)
             
             let json = try! JSON(data: data.data!)
@@ -65,9 +66,11 @@ class PostsModel {
                 //agregar atributo postURL
                 let post = Posts(
                     id: p.1["mediaUrl"].stringValue,
-                    User: user,
+                    User: orgName,
                     Caption: p.1["caption"].stringValue,
-                    Image: p.1["mediaUrl"].stringValue
+                    Image: p.1["mediaUrl"].stringValue,
+                    timeStamp: String(p.1["timestamp"].stringValue.prefix(10)),
+                    postLink: p.1["permalink"].stringValue
                 )
                 //debugPrint(p)
                 //debugPrint("-------------------")

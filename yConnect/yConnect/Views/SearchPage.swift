@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SearchPage: View {
     
-    var organizationModel = OrganizationModel()
+    //@State var organizationModel: OrganizationModel
+    @State var organizationModel = OrganizationModel()
+    //var searchBy: String
+    //var searchContent: [String]
+    
+    //var searchTags = ["social"]
+    @State var searchTags : [String]
     
     var body: some View {
         VStack(spacing: 0){
@@ -19,12 +25,10 @@ struct SearchPage: View {
                 ScrollView{
                     ForEach(organizationModel.organizations, id: \.id) { org in
                         NavigationLink{
-                            OrgProfileView(organization: Organization.dummy)
+                            OrgProfileView(organization: org)
                         } label: {
                             OrgInfoView(
-                                Org_Name: org.Name,
-                                Org_Des: org.Description,
-                                Org_Tags: org.Tags)
+                                organization: org)
                             .padding(.bottom, 3)
                         }
                     }
@@ -37,11 +41,17 @@ struct SearchPage: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            organizationModel.fetchAllOrganizations()
+            //if (searchBy == "tags") {
+                organizationModel.fetchOrganizationsByTag(tags: searchTags)
+            //}
+            //else if (searchBy == "name") {
+                
+            //}
         }
     }
 }
 
 #Preview {
-    SearchPage()
+    SearchPage(searchTags: ["social"])
 }
+
