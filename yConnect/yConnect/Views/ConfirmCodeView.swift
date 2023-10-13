@@ -15,7 +15,7 @@ struct ConfirmCodeView: View {
     @State var phoneNumber: String
     @State var isLogged: Bool = false
     
-    @Query private var user: [Users]
+    //@Query private var user: [Users]
     
     var body: some View {
         if !isLogged {
@@ -72,6 +72,7 @@ struct ConfirmCodeView: View {
     func setUser(userPhoneNumber: String) {
         let user = Users(id: "", Name: "", Telephone: phoneNumber, Email: "", DescriptionA: "", Tags: [""], Favorites: [""], Password: "")
         context.insert(user)
+        
     }
     
             

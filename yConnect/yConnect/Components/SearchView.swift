@@ -48,9 +48,22 @@ struct SearchView: View {
                 
     }
     
+    func searchEngine(_ texto: String) -> OrganizationModel{
+        let org = OrganizationModel()
+        
+        //let grupoDeSubstrings = org.fetchAllOrganizationsNames()
+
+        //if grupoDeSubstrings.contains(where: texto.contains) {
+            //org.fetchOrganizationsByName(name: texto)
+            //return org
+        //} else {
+            let tags = texto.components(separatedBy: " ")
+            org.fetchOrganizationsByTag(tags: tags )
+            return org
+        //}
+    }
+    
     func onSearch(searchText: String) {
-        // Aquí puedes poner el código para realizar la búsqueda
-        // Luego, cuando quieras redirigir a otra pantalla, puedes activar isActive
         isActive = true
     }
 }

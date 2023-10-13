@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SearchPage: View {
     
-    var organizationModel = OrganizationModel()
+    //@State var organizationModel: OrganizationModel
+    private var organizationModel = OrganizationModel()
+    var searchTags = ["social"]
+    //@State var searchTags : [String]
     
     var body: some View {
         VStack(spacing: 0){
@@ -37,7 +40,7 @@ struct SearchPage: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            organizationModel.fetchAllOrganizations()
+            organizationModel.fetchOrganizationsByTag(tags: searchTags)
         }
     }
 }
@@ -45,3 +48,4 @@ struct SearchPage: View {
 #Preview {
     SearchPage()
 }
+
