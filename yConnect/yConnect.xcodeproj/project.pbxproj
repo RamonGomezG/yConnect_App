@@ -34,9 +34,13 @@
 		FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB50086E2ABD0B3800028EEB /* TagSelectView.swift */; };
 		FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008702ABD0D1C00028EEB /* TagComponent.swift */; };
 		FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008722ABD127B00028EEB /* ButtonComponent.swift */; };
+		FB8E95FC2AD9EE0200232B92 /* OrgPostsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E95FB2AD9EE0200232B92 /* OrgPostsSection.swift */; };
+		FB8E95FE2AD9F61D00232B92 /* ToolBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E95FD2AD9F61D00232B92 /* ToolBarComponent.swift */; };
+		FB8E96002AD9FC9B00232B92 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E95FF2AD9FC9B00232B92 /* LocationMapView.swift */; };
+		FB8E96022ADA003C00232B92 /* TagsBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E96012ADA003C00232B92 /* TagsBarComponent.swift */; };
+		FB8E96042ADA036900232B92 /* OrgInfoGalleryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */; };
 		FB8F33052AC653E5007B41D7 /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33042AC653E5007B41D7 /* PostsModel.swift */; };
 		FB8F33072AC657FA007B41D7 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33062AC657FA007B41D7 /* Tags.swift */; };
-		FB8F630F2AD8E42900A39765 /* postOrgSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F630E2AD8E42900A39765 /* postOrgSection.swift */; };
 		FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF862AB8F9A7009441FD /* yConnectApp.swift */; };
 		FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF882AB8F9A7009441FD /* ContentView.swift */; };
 		FB99EF8D2AB8F9A9009441FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */; };
@@ -86,9 +90,13 @@
 		FB5008702ABD0D1C00028EEB /* TagComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagComponent.swift; sourceTree = "<group>"; };
 		FB5008722ABD127B00028EEB /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		FB6CB5252AC786CF006C08ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB8E95FB2AD9EE0200232B92 /* OrgPostsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgPostsSection.swift; sourceTree = "<group>"; };
+		FB8E95FD2AD9F61D00232B92 /* ToolBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarComponent.swift; sourceTree = "<group>"; };
+		FB8E95FF2AD9FC9B00232B92 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		FB8E96012ADA003C00232B92 /* TagsBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsBarComponent.swift; sourceTree = "<group>"; };
+		FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgInfoGalleryComponent.swift; sourceTree = "<group>"; };
 		FB8F33042AC653E5007B41D7 /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
 		FB8F33062AC657FA007B41D7 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
-		FB8F630E2AD8E42900A39765 /* postOrgSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postOrgSection.swift; sourceTree = "<group>"; };
 		FB99EF832AB8F9A7009441FD /* yConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99EF862AB8F9A7009441FD /* yConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yConnectApp.swift; sourceTree = "<group>"; };
 		FB99EF882AB8F9A7009441FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,7 +145,6 @@
 				FB106E2B2AC2561D00B2781E /* Users.swift */,
 				FB106E2D2AC258A000B2781E /* OrganizationModel.swift */,
 				FB8F33042AC653E5007B41D7 /* PostsModel.swift */,
-				FB8F630E2AD8E42900A39765 /* postOrgSection.swift */,
 				FB8F33062AC657FA007B41D7 /* Tags.swift */,
 				FBA740A82ACB8FB200123543 /* Tag.swift */,
 				FBA740AA2ACB918B00123543 /* TagModel.swift */,
@@ -158,13 +165,18 @@
 				FB17FC5E2AD63D910020BC81 /* ShareButtonView.swift */,
 				FBB0ED5B2AC63E58001CC506 /* MyButton.swift */,
 				FB17FC5C2AD63D830020BC81 /* DirectionButtonView.swift */,
+				FB8E95FF2AD9FC9B00232B92 /* LocationMapView.swift */,
 				FB106E242AC2411600B2781E /* PostItemView.swift */,
 				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
 				FB17FC522AD633040020BC81 /* DemoTag.swift */,
 				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
+				FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */,
+				FB8E96012ADA003C00232B92 /* TagsBarComponent.swift */,
+				FB8E95FD2AD9F61D00232B92 /* ToolBarComponent.swift */,
 				DB3349C22AC3C09800F99430 /* VideoItemView.swift */,
 				DB3349C02AC3BAB500F99430 /* VideoView.swift */,
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
+				FB8E95FB2AD9EE0200232B92 /* OrgPostsSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -322,12 +334,12 @@
 				FB106E2A2AC2548100B2781E /* Posts.swift in Sources */,
 				FB8F33052AC653E5007B41D7 /* PostsModel.swift in Sources */,
 				FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */,
-				FB8F630F2AD8E42900A39765 /* postOrgSection.swift in Sources */,
 				FB106E232AC23DB600B2781E /* PostsView.swift in Sources */,
 				FB17FC532AD633040020BC81 /* DemoTag.swift in Sources */,
 				FB106E252AC2411600B2781E /* PostItemView.swift in Sources */,
 				FB106E282AC24F0200B2781E /* Organization.swift in Sources */,
 				FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */,
+				FB8E95FE2AD9F61D00232B92 /* ToolBarComponent.swift in Sources */,
 				FB17FC4F2AD632F50020BC81 /* UserModel.swift in Sources */,
 				FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */,
 				FB274C3F2AD757AA005F6289 /* OrgProfileView.swift in Sources */,
@@ -336,8 +348,10 @@
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,
 				FB17FC612AD63D9A0020BC81 /* OrgInfoView.swift in Sources */,
 				FB17FC5D2AD63D830020BC81 /* DirectionButtonView.swift in Sources */,
+				FB8E96002AD9FC9B00232B92 /* LocationMapView.swift in Sources */,
 				FBA740AB2ACB918B00123543 /* TagModel.swift in Sources */,
 				FB99EF9E2AB90FE4009441FD /* SectionView.swift in Sources */,
+				FB8E95FC2AD9EE0200232B92 /* OrgPostsSection.swift in Sources */,
 				FB17FC512AD632FB0020BC81 /* FavsPage.swift in Sources */,
 				FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */,
 				FB106E2C2AC2561D00B2781E /* Users.swift in Sources */,
@@ -347,7 +361,9 @@
 				FB17FC5F2AD63D910020BC81 /* ShareButtonView.swift in Sources */,
 				DB3349BF2AC3BA3500F99430 /* VideosView.swift in Sources */,
 				FB99EFA82AB922C4009441FD /* LogoView.swift in Sources */,
+				FB8E96042ADA036900232B92 /* OrgInfoGalleryComponent.swift in Sources */,
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
+				FB8E96022ADA003C00232B92 /* TagsBarComponent.swift in Sources */,
 				FB17FC4D2AD632ED0020BC81 /* SearchPage.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,

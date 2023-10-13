@@ -27,7 +27,7 @@ extension Organization {
         Name: "yCo Foundation",
         Location: "Av. Del Estado 208, Tecnológico, 64700 Monterrey, N.L.",
         Description: "Somos una comunidad de innovación, que cuenta con espacio físico de encuentro, fortalecimiento y acción colectiva, para generar impacto social.",
-        Tags: ["emprendimiento apoyo, social, consultaria"],
+        Tags: ["emprendimiento", "apoyo", "social", "consultaria"],
         Igtag: "https://feeds.behold.so/lmZc1NaZcbdrO2InKahF",
         Telephone: "8661735944",
         Email: "yconnection@gmail.com")

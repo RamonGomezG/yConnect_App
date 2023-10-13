@@ -18,7 +18,7 @@ struct FavsPage: View {
             if organizationModel.organizations.count > 0 {
                 ScrollView{
                     ForEach(organizationModel.organizations, id: \.id) { org in
-                        OrgInfoView(Org_Name: org.Name, Org_Des: org.Description, Org_Tags: org.Tags)
+                        OrgInfoView(organization: org)
                         .padding(.bottom, 3)
                     }
                 }

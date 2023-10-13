@@ -8,44 +8,25 @@
 import SwiftUI
 
 struct OrgInfoView: View {
-    
-    @State var Org_Name: String
-    @State var Org_Des: String
-    @State var Org_Tags: [String]
-    @State var isFavorite: Bool = false
-    
+    var organization : Organization
+    @State var isFavorite = false
     var body: some View {
         ZStack{
             Color("BackColor")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack(alignment: .leading, spacing: 10){
-                HStack(spacing: 10){
-                    Spacer()
-                    Image("Image1")
-                        .resizable()
-                        .frame(width: 100, height: 70)
-                        .cornerRadius(10)
-                        .padding(.top, 15)
-                    Image("Image2")
-                        .resizable()
-                        .frame(width: 100, height: 70)
-                        .cornerRadius(10)
-                        .padding(.top, 15)
-                    Image("Image3")
-                        .resizable()
-                        .frame(width: 100, height: 70)
-                        .cornerRadius(10)
-                        .padding(.top, 15)
-                    Spacer()
-                }
+                HStack(content: {
+                    OrgInfoGalleryComponent(org: organization)
+                        .padding(.leading, 25)
+                })
                 VStack {
-                    Text("\(Org_Name)")
+                    Text("\(organization.Name)")
                         .font(.system(size: 20))
                         .padding(.top, 3)
                         .padding(.bottom, 5)
                         .foregroundStyle(Color("TitleColor"))
                     
-                    Text("\(Org_Des)")
+                    Text("\(organization.Description)")
                         .font(.system(size: 10))
                         .foregroundStyle(.black)
                 }
@@ -53,7 +34,7 @@ struct OrgInfoView: View {
                 HStack {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack{
-                            ForEach(Org_Tags, id: \.self) { tag in
+                            ForEach(organization.Tags, id: \.self) { tag in
                                 DemoTag(title: tag)
                                     .font(.system(size: 14))
                                     .foregroundStyle(Color("TitleColor"))
@@ -74,9 +55,9 @@ struct OrgInfoView: View {
                         .padding(.top, 8)
                 }
                 HStack(spacing: 5){
-                    CallButtonView(phoneNumber: "6562465495", icon: "phone.fill")
+                    CallButtonView(phoneNumber: "\(organization.Telephone)", icon: "phone.fill")
                     ShareButtonView(shareText: "Apps", icon: "arrowshape.turn.up.right.fill")
-                    DirectionButtonView(address: "Av. Eugenio Garza Sada Sur 2788, Alta Vista, 64840 Monterrey, N.L", icon: "map.fill")
+                    DirectionButtonView(address: "\(organization.Location)", icon: "map.fill")
                 }
                 .padding(.horizontal, 18)
                 .padding(.top, 5)
@@ -87,11 +68,11 @@ struct OrgInfoView: View {
             .background(
                 RoundedRectangle(cornerRadius: 25)
                     .fill(.white))
-            .padding(.horizontal, 25)
+            .padding(.horizontal, 15)
         }
     }
 }
 
 #Preview {
-    OrgInfoView(Org_Name: "Arena (Atención Integral del Autismo)", Org_Des: "Atención Integral del Autismo. Terapias especializadas y servicio de evaluación y diagnostico de Autismo y Asperger", Org_Tags: ["Autismo", "Terapias", "Evaluación", "Detección Temprana"])
+    OrgInfoView(organization: Organization.dummy)
 }

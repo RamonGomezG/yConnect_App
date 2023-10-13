@@ -28,9 +28,7 @@ struct SearchPage: View {
                             OrgProfileView(organization: org)
                         } label: {
                             OrgInfoView(
-                                Org_Name: org.Name,
-                                Org_Des: org.Description,
-                                Org_Tags: org.Tags)
+                                organization: org)
                             .padding(.bottom, 3)
                         }
                     }

@@ -17,30 +17,27 @@ struct OrgProfileView: View {
             Color.colorPrincipal.ignoresSafeArea()
             ScrollView {
                 LogoView()
-                    .padding(.bottom, 20)
                 VStack{
-                    
                     Text("\(organization.Name)")
                         .font(.title2)
                         .foregroundStyle(Color.principalDarker)
+                        .bold()
+                        .padding(.bottom, -5)
+                    
+                    TagsBarComponent(organization: organization)
+                    
                     VStack{
                         NavigationLink {
                             OrganizationPostsView(organization: organization)
                         } label: {
-                            //SectionView(title: "Publicaciones", imageName: "imagen1").foregroundColor(.principalDarker)
-                            HStack {
-                                //ScrollView(.horizontal, showsIndicators: false) {
-                                    ForEach (postsModel.posts) { post in
-                                        postOrgSection(url: post.Image)
-                                    }
-                                //}//.frame(width: 300, height: 300)
-                            }
+                            OrgPostsSection(org: organization).foregroundColor(.principalDarker)
                         }
                         
                         NavigationLink {
-                            VideosView()
+                            MapView(address: organization.Location)
                         } label: {
-                            SectionView(title: "Videos", imageName: "imagen2").foregroundColor(.principalDarker)
+                            //SectionView(title: "Videos", imageName: "imagen2").foregroundColor(.principalDarker)
+                            LocationMapView(address: organization.Location).foregroundColor(.principalDarker)
                         }
                     }
                     
@@ -48,17 +45,14 @@ struct OrgProfileView: View {
                 .padding(.vertical, 10)
                 .padding(.horizontal, 7)
                 .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(.white))
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.white.opacity(0.7)))
             }
+            ToolBarComponent(organization: organization)
+                .padding(.top, 730)
+                .shadow(radius: 10)
         }
         .navigationBarBackButtonHidden(false)
-        .onAppear{
-            postsModel.fetchPostsWithOrgaizationIGURL(url: organization.Igtag, orgName: organization.Name)
-            debugPrint("fetching...")
-            debugPrint(postsModel.posts)
-        }
-        
     }
 }
 
