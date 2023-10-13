@@ -45,7 +45,7 @@ struct PostsView: View {
         }
         .navigationBarBackButtonHidden(false)
         .onAppear{
-            postsModel.fetchPostsWithOrgaizationIGURL(url: "")
+            postsModel.fetchPostsWithOrgaizationIGURL(url: "", orgName: "prueba")
         }
     }
 }

@@ -15,7 +15,7 @@ struct SectionView: View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 350, height: 280)
+            .frame(width: 350, height: 300)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .overlay(
                 VStack{

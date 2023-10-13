@@ -42,26 +42,31 @@ struct SearchView: View {
             }
             .font(.headline)
             .padding()
-        NavigationLink(destination: SearchPage(), isActive: $isActive) {
+        NavigationLink(destination: SearchPage(searchTags: searchEngine(texto: searchText)), isActive: $isActive) {
                                 EmptyView()
                             }
                 
     }
     
-    func searchEngine(_ texto: String) -> OrganizationModel{
+    func searchEngine(texto: String) -> [String]{
+        var textoLow = texto.lowercased()
+        let tags = textoLow.components(separatedBy: " ")
+        return tags
+        
+    }
+    
+    /*func searchBy(texto: String) -> String {
         let org = OrganizationModel()
         
-        //let grupoDeSubstrings = org.fetchAllOrganizationsNames()
+        let grupoDeSubstrings = org.fetchAllOrganizationsNames()
 
-        //if grupoDeSubstrings.contains(where: texto.contains) {
-            //org.fetchOrganizationsByName(name: texto)
-            //return org
-        //} else {
-            let tags = texto.components(separatedBy: " ")
-            org.fetchOrganizationsByTag(tags: tags )
-            return org
-        //}
-    }
+        if grupoDeSubstrings.contains(where: texto.contains) {
+            return "name"
+        }
+        else {
+            return "tags"
+        }
+    }*/
     
     func onSearch(searchText: String) {
         isActive = true

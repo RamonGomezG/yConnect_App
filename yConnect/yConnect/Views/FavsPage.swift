@@ -36,5 +36,5 @@ struct FavsPage: View {
 }
 
 #Preview {
-    SearchPage() // cambiar
+    SearchPage(searchTags: ["mujeres"]) // cambiar
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OrgProfileView: View {
     @State var organization  : Organization
+    var postsModel = PostsModel()
+    var images: [String] = []
     
     var body: some View {
         ZStack{
@@ -17,14 +19,22 @@ struct OrgProfileView: View {
                 LogoView()
                     .padding(.bottom, 20)
                 VStack{
+                    
                     Text("\(organization.Name)")
                         .font(.title2)
                         .foregroundStyle(Color.principalDarker)
                     VStack{
                         NavigationLink {
-                            PostsView()
+                            OrganizationPostsView(organization: organization)
                         } label: {
-                            SectionView(title: "Publicaciones", imageName: "imagen1").foregroundColor(.principalDarker)
+                            //SectionView(title: "Publicaciones", imageName: "imagen1").foregroundColor(.principalDarker)
+                            HStack {
+                                //ScrollView(.horizontal, showsIndicators: false) {
+                                    ForEach (postsModel.posts) { post in
+                                        postOrgSection(url: post.Image)
+                                    }
+                                //}//.frame(width: 300, height: 300)
+                            }
                         }
                         
                         NavigationLink {
@@ -41,7 +51,13 @@ struct OrgProfileView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(.white))
             }
-        }.navigationBarBackButtonHidden(false)
+        }
+        .navigationBarBackButtonHidden(false)
+        .onAppear{
+            postsModel.fetchPostsWithOrgaizationIGURL(url: organization.Igtag, orgName: organization.Name)
+            debugPrint("fetching...")
+            debugPrint(postsModel.posts)
+        }
         
     }
 }
