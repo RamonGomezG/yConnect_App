@@ -31,6 +31,7 @@ struct ExploreView: View {
                 VStack{
                     HStack{
                         NavigationLink {
+                            
                         }
                         label: {
                             Image(systemName: "line.3.horizontal")

@@ -11,7 +11,7 @@ import SwiftData
 @main
 struct yConnectApp: App {
     
-      /*  var sharedModelContainer: ModelContainer = {
+        var sharedModelContainer: ModelContainer = {
             let schema = Schema([
                 Users.self,
             ])
@@ -22,12 +22,12 @@ struct yConnectApp: App {
             } catch {
                 fatalError("Could not create ModelContainer: \(error)")
             }
-        }() */
+        }()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        //.modelContainer(sharedModelContainer)
+        .modelContainer(sharedModelContainer)
     }
 }

@@ -33,11 +33,11 @@ class OrganizationModel {
                 let json = try! JSON(data: data.data!)
                 debugPrint(json)
                 
-                for o in json["organizations"] {
+                for o in json["Organizations"] {
                     let org = Organization(
                         id: o.1["ID"].stringValue,
                         Name: o.1["Name"].stringValue,
-                        Location: o.1["Location"].stringValue,
+                        Location: o.1["Location"].stringValuse,
                         Description: o.1["Description"].stringValue,
                         Tags: o.1["Tags"].arrayValue.compactMap { $0.stringValue },
                         Igtag: o.1["IgUrl"].stringValue,
