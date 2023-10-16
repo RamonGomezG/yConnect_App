@@ -22,6 +22,9 @@ struct ExploreView: View {
     )*/
     
     @State private var isActive = false
+    @Query var users: [Users]
+    //var tagModel: TagModel
+    var tags: [Tag]
     
     var body: some View {
         ZStack{
@@ -42,7 +45,7 @@ struct ExploreView: View {
                         .padding(.trailing, -15)
                         SearchView()
                     }
-                    //Text("Hola \(user.Telephone)")
+                    
                     VStack{
                         NavigationLink {
                             PostsView()
@@ -59,13 +62,22 @@ struct ExploreView: View {
                     
                 }
             }
-        }.navigationBarBackButtonHidden(true)
-        
+        }
+        .onAppear(
+            perform: {
+                pullTags(tags: tags)
+            }
+        )
+        .navigationBarBackButtonHidden(true)
+    }
+    
+    func pullTags(tags: [Tag]) {
+        for tag in tags {
+            users.first?.Tags.append(tag.name)
+        }
     }
 }
 
 #Preview {
-    ExploreView(
-        //user: Users.userDummy
-    )
+    ExploreView(tags: [Tag(name: "Social"),Tag(name: "Mujeres")])
 }

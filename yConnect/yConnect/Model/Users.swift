@@ -23,12 +23,12 @@ final class Users {
     init(id: String, Name: String, Telephone: String, Email: String, DescriptionA: String, Tags: [String], Favorites: [String], Password: String ) {
         self.id = id
         self.Telephone = Telephone
-        self.Name = ""
-        self.Email = ""
-        self.DescriptionA = ""
-        self.Tags = [""]
-        self.Favorites = [""]
-        self.Password = ""
+        self.Name = Name
+        self.Email = Email
+        self.DescriptionA = DescriptionA
+        self.Tags = Tags
+        self.Favorites = Favorites
+        self.Password = Password
         
     }
 }

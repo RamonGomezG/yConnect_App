@@ -37,13 +37,12 @@ class OrganizationModel {
                     let org = Organization(
                         id: o.1["ID"].stringValue,
                         Name: o.1["Name"].stringValue,
-                        Location: o.1["Location"].stringValuse,
+                        Location: o.1["Location"].stringValue,
                         Description: o.1["Description"].stringValue,
                         Tags: o.1["Tags"].arrayValue.compactMap { $0.stringValue },
                         Igtag: o.1["IgUrl"].stringValue,
                         Telephone: o.1["Telephone"].stringValue,
-                        Email: o.1["Email"].stringValue
-                        
+                        Email: o.1["Email"].stringValue             
                     )
                     self.organizations.append(org)
                     
