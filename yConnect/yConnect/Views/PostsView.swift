@@ -25,12 +25,14 @@ struct PostsView: View {
             SearchView()
                 .background(Color("BackColor"))
             if organizationModel.organizations.count > 0 {
-                ScrollView{
-                    ForEach(organizationModel.organizations, id: \.id) { org in
-                        NavigationLink{
-                            OrgProfileView(organization: org)
-                        } label: {
-                            JustPostsComponent(organization: org)
+                VStack{
+                    ScrollView {
+                        ForEach(organizationModel.organizations, id: \.id) { org in
+                            NavigationLink{
+                                OrgProfileView(organization: org)
+                            } label: {
+                                JustPostsComponent(organization: org)
+                            }
                         }
                     }
                 }
@@ -43,8 +45,8 @@ struct PostsView: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            tags = users.first!.Tags
-            debugPrint(tags)
+            //tags = users.first!.Tags
+            tags = ["social"]
             organizationModel.fetchOrganizationsByTag(tags: tags)
         }
     }

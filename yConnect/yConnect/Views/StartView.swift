@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct StartView: View {
+    @Query var users: [Users]
+    
     var body: some View {
         ZStack {
             Image("fondoyconnect")
@@ -25,7 +28,12 @@ struct StartView: View {
                     .foregroundColor(Color.white)
             
                     NavigationLink {
-                        LogInView()
+                        if users.isEmpty {
+                            LogInView()
+                        } else {
+                            TagSelectView()
+                        }
+                        
                     } label: {
                         HStack {
                             Text("Ingresar")

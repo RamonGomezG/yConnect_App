@@ -93,8 +93,8 @@ struct RegistroOrgView: View {
             }
             .padding()
             Spacer()
-            RegistroOrgsButton(title: "Enviar registro", action: {})
-                .frame(maxHeight: .infinity, alignment: .bottom)
+            //RegistroOrgsButton(title: "Enviar registro", action: {})
+                //.frame(maxHeight: .infinity, alignment: .bottom)
         }
     }
 }

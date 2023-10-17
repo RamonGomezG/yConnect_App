@@ -54,9 +54,10 @@ struct ExploreView: View {
                         }
                         
                         NavigationLink {
-                            VideosView()
+                            var tags = users.first!.Tags
+                            SearchPage(searchTags: tags)
                         } label: {
-                            SectionView(title: "Videos", imageName: "imagen2").foregroundColor(.principalDarker)
+                            SectionView(title: "Sugerencias", imageName: "imagen2").foregroundColor(.principalDarker)
                         }
                     }
                     
@@ -66,12 +67,15 @@ struct ExploreView: View {
         .onAppear(
             perform: {
                 pullTags(tags: tags)
+                debugPrint("Telephono: ")
+                debugPrint(users.first!.Telephone)
             }
         )
         .navigationBarBackButtonHidden(true)
     }
     
     func pullTags(tags: [Tag]) {
+        users.first?.Tags.removeAll()
         for tag in tags {
             users.first?.Tags.append(tag.name.lowercased())
         }

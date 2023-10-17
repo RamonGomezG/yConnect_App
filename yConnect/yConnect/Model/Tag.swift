@@ -15,7 +15,6 @@ struct Tag: Identifiable, Hashable {
     var id = UUID().uuidString
     var name: String
     var size: CGFloat = 0
-    
 }
 
 extension UIScreen{
