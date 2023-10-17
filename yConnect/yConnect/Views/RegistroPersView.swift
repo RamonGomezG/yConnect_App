@@ -18,13 +18,16 @@ struct RegistroPersView: View {
             .ignoresSafeArea()
             .overlay(
                 VStack {
+                    LogoView()
+                        .padding(.top, 30)
                     Text("Datos de usuario")
                         .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
+                        .foregroundStyle(Color("TitleColor"))
+                        .padding(.bottom, 30)
+                        .padding(.top, 30)
                     HStack{
                         TextField("Nombre y apellido", text: $name_person)
-                            .foregroundColor(.black)
+                            .foregroundStyle(Color("TitleColor"))
                             .font(.title2)
                             .frame(maxWidth: .infinity, alignment: .center)
                         Spacer()
@@ -58,9 +61,9 @@ struct RegistroPersView: View {
                         .padding()
                         
                         NavigationLink(destination: FavsPage()) {
-                            Text("Orgs favs")
+                            Text("Organizaciones Favoritas")
                                 .font(.title2)
-                                .frame(width: 100, height: 60, alignment: .center)
+                                .frame(width: 200, height: 60, alignment: .center)
                                 .background(Color.principalDarker)
                                 .foregroundColor(Color.white)
                                 .cornerRadius(10)
@@ -75,6 +78,7 @@ struct RegistroPersView: View {
                                 .cornerRadius(10)
                         }
                         .padding()
+                        Spacer()
                         
                     }
                 }
