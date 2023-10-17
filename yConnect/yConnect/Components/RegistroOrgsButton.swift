@@ -41,3 +41,4 @@ struct RegistroOrgsButton_Previews: PreviewProvider{
         RegistroOrgsButton(title: "Terminar", action: {}) //backgroundColor: .white)
     }
 }
+
