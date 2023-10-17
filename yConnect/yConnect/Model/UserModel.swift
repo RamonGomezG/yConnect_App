@@ -32,7 +32,30 @@ class UserModel {
                     id: u["ID"].stringValue,
                     Name: u["Name"].stringValue,
                     Telephone: u["Telephone"].stringValue,
-                    Email: u["Name"].stringValue, 
+                    Email: u["Name"].stringValue,
+                    DescriptionA: u["Description"].stringValue,
+                    Tags: u["Tags"].arrayObject as? [String] ?? [],
+                    Favorites: u["Favorites"].arrayObject as? [String] ?? [],
+                    Password: u["Password"].stringValue)
+                users.append(user)
+            }
+        }
+    }
+    
+    func updatePersDatos(){
+        users.removeAll()
+        
+        let url = "http://10.14.255.175:3000/users/Update"
+        
+        AF.request(url,method: .post).response { [self] data in
+            let json = try! JSON(data: data.data!)
+            
+            for u in json["data"].arrayValue{
+                let user = Users(
+                    id: u["ID"].stringValue,
+                    Name: u["Name"].stringValue,
+                    Telephone: u["Telephone"].stringValue,
+                    Email: u["Name"].stringValue,
                     DescriptionA: u["Description"].stringValue,
                     Tags: u["Tags"].arrayObject as? [String] ?? [],
                     Favorites: u["Favorites"].arrayObject as? [String] ?? [],

@@ -13,11 +13,11 @@ class TagModel: ObservableObject{
     
     @Published var rows: [[Tag]] = []
     @Published var tags: [Tag] = [
-        Tag(name: "Terapia"),
-        Tag(name: "Psicología"),
-        Tag(name: "Niños"),
-        Tag(name: "Autismo")
+        Tag(name: "Social"),
+        Tag(name: "Desarrollo"),
+        Tag(name: "Ciudadania"),
     ]
+    
     @Published var tagText = ""
     
     func getTags(){

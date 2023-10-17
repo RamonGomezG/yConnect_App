@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct TagSelectView: View {
-        @StateObject var viewModel = TagModel()
-        //var user: Users
+        @StateObject var tagModel = TagModel()
         
         var body: some View {
             ZStack {
@@ -29,10 +29,10 @@ struct TagSelectView: View {
                             .multilineTextAlignment(.center)
                             .padding(.top, 15)
                             .frame(width: 300)
-                        TaskSearchBarComponent(viewModel: viewModel)
-                        
+                        TaskSearchBarComponent(viewModel: tagModel)
+                    
                         VStack(alignment: .leading, spacing: 4){
-                            ForEach(viewModel.rows, id:\.self){ rows in
+                            ForEach(tagModel.rows, id:\.self){ rows in
                                 HStack(spacing: 6){
                                     ForEach(rows){ row in
                                         Text(row.name)
@@ -47,7 +47,7 @@ struct TagSelectView: View {
                                                     Capsule()
                                                         .fill(.principalDarker)
                                                     Button{
-                                                        viewModel.removeTag(by: row.id)
+                                                        tagModel.removeTag(by: row.id)
                                                     } label:{
                                                         Image(systemName: "xmark")
                                                             .frame(width: 10, height: 10)
@@ -65,7 +65,7 @@ struct TagSelectView: View {
                         }
                         .padding(24)
                         NavigationLink {
-                            ExploreView()
+                            ExploreView(tags: tagModel.tags)
                         } label: {
                             ButtonComponent(title: "Continuar")
                         }

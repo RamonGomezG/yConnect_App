@@ -42,8 +42,7 @@ class OrganizationModel {
                         Tags: o.1["Tags"].arrayValue.compactMap { $0.stringValue },
                         Igtag: o.1["IgUrl"].stringValue,
                         Telephone: o.1["Telephone"].stringValue,
-                        Email: o.1["Email"].stringValue
-                        
+                        Email: o.1["Email"].stringValue             
                     )
                     self.organizations.append(org)
                     
