@@ -40,7 +40,7 @@ struct ExploreView: View {
                             Image(systemName: "line.3.horizontal")
                                 .font(.system(size: 30))
                                 .foregroundColor(.white)
-                                }
+                        }
                         .padding(.leading, 20)
                         .padding(.trailing, -15)
                         SearchView()
@@ -73,7 +73,7 @@ struct ExploreView: View {
     
     func pullTags(tags: [Tag]) {
         for tag in tags {
-            users.first?.Tags.append(tag.name)
+            users.first?.Tags.append(tag.name.lowercased())
         }
     }
 }
