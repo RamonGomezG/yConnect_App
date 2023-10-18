@@ -31,7 +31,7 @@ struct StartView: View {
                         if users.isEmpty {
                             LogInView()
                         } else {
-                            TagSelectView()
+                            ExploreView()
                         }
                         
                     } label: {

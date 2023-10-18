@@ -9,22 +9,8 @@ import SwiftUI
 import SwiftData
 
 struct ExploreView: View {
-    //@State var user: Users
-    /*var user = Users(
-        id: "123",
-        Name: "yConnection",
-        Telephone: "866172672",
-        Email: "yconnection@gmail.com",
-        DescriptionA: "Aplicacion movil de conecxión con OSCs",
-        Tags: ["Autismo", "Terapia"],
-        Favorites: ["Uno", "Dos"],
-        Password: "contraseña123"
-    )*/
-    
-    @State private var isActive = false
     @Query var users: [Users]
-    //var tagModel: TagModel
-    var tags: [Tag]
+    var tags: [Tag] = []
     
     var body: some View {
         ZStack{
@@ -54,7 +40,7 @@ struct ExploreView: View {
                         }
                         
                         NavigationLink {
-                            var tags = users.first!.Tags
+                            let tags = users.first!.Tags
                             SearchPage(searchTags: tags)
                         } label: {
                             SectionView(title: "Sugerencias", imageName: "imagen2").foregroundColor(.principalDarker)
@@ -64,14 +50,8 @@ struct ExploreView: View {
                 }
             }
         }
-        .onAppear(
-            perform: {
-                pullTags(tags: tags)
-                debugPrint("Telephono: ")
-                debugPrint(users.first!.Telephone)
-            }
-        )
         .navigationBarBackButtonHidden(true)
+        
     }
     
     func pullTags(tags: [Tag]) {
@@ -83,5 +63,5 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView(tags: [Tag(name: "Social"),Tag(name: "Mujeres")])
+    ExploreView()
 }

@@ -9,12 +9,16 @@ import SwiftUI
 import SwiftData
 
 struct TagSelectView: View {
+        @Query var users: [Users]
         @StateObject var tagModel = TagModel()
-        
+                
         var body: some View {
             ZStack {
                 Color.colorPrincipal
                     .ignoresSafeArea()
+                    .onAppear{
+                        tagModel.startTags(users: users)
+                    }
                 ScrollView {
                     VStack {
                         Spacer()
@@ -72,9 +76,10 @@ struct TagSelectView: View {
                         Spacer()
                     }
                 }
-            }.navigationBarBackButtonHidden(true)
+            }
+            .navigationBarBackButtonHidden(true)
         }
-    }  
+    }
 
 
 #Preview {
