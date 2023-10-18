@@ -61,7 +61,7 @@ struct RegistroPersView: View {
                         }
                         .padding()
                         
-                        NavigationLink(destination: FavsPage()) {
+                        NavigationLink(destination: FavsPage(searchTags: ["mujeres"])) { //corregir luego
                             Text("Organizaciones Favoritas")
                                 .font(.title2)
                                 .frame(width: 200, height: 60, alignment: .center)
