@@ -45,8 +45,8 @@ struct PostsView: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            //tags = users.first!.Tags
-            tags = ["social"]
+            tags = users.first!.Tags
+            //tags = ["social", "mujeres"]
             organizationModel.fetchOrganizationsByTag(tags: tags)
         }
     }

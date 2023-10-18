@@ -71,7 +71,7 @@ struct ConfirmCodeView: View {
         
     func setUser(userPhoneNumber: String) {
         
-        let user = Users(id: "", Name: "", Telephone: phoneNumber, Email: "", DescriptionA: "", Tags: [""], Favorites: [""], Password: "")    
+        let user = Users(id: "", Name: "", Telephone: phoneNumber, Email: "", DescriptionA: "", Tags: [], Favorites: [], Password: "")
         context.insert(user)
         
     }

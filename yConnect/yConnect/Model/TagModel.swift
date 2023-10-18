@@ -8,15 +8,16 @@
 import Foundation
 import UIKit
 
-
 class TagModel: ObservableObject{
     
     @Published var rows: [[Tag]] = []
     @Published var tags: [Tag] = [
-        Tag(name: "Social"),
-        Tag(name: "Desarrollo"),
-        Tag(name: "Ciudadania"),
+        //Tag(name: "Social"),
+        //Tag(name: "Desarrollo"),
+        //Tag(name: "Ciudadania"),
     ]
+    
+    
     
     @Published var tagText = ""
     
@@ -64,7 +65,16 @@ class TagModel: ObservableObject{
     init(){
         getTags()
     }
-
+    
+    func startTags(users: [Users]){
+        if !users.isEmpty {
+            for tag in users.first!.Tags {
+                tags.append(Tag(name: tag))
+            }
+            getTags()
+        }
+    }
+    
     func addTag(){
         tags.append(Tag(name: tagText))
         tagText = ""
