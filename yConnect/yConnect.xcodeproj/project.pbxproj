@@ -43,6 +43,7 @@
 		FB8E96042ADA036900232B92 /* OrgInfoGalleryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */; };
 		FB8F33052AC653E5007B41D7 /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33042AC653E5007B41D7 /* PostsModel.swift */; };
 		FB8F33072AC657FA007B41D7 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F33062AC657FA007B41D7 /* Tags.swift */; };
+		FB94616E2ADF7535005F3417 /* OrgInfoViewFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94616D2ADF7535005F3417 /* OrgInfoViewFav.swift */; };
 		FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF862AB8F9A7009441FD /* yConnectApp.swift */; };
 		FB99EF892AB8F9A7009441FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99EF882AB8F9A7009441FD /* ContentView.swift */; };
 		FB99EF8D2AB8F9A9009441FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB99EF8C2AB8F9A9009441FD /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgInfoGalleryComponent.swift; sourceTree = "<group>"; };
 		FB8F33042AC653E5007B41D7 /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
 		FB8F33062AC657FA007B41D7 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		FB94616D2ADF7535005F3417 /* OrgInfoViewFav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgInfoViewFav.swift; sourceTree = "<group>"; };
 		FB99EF832AB8F9A7009441FD /* yConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB99EF862AB8F9A7009441FD /* yConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yConnectApp.swift; sourceTree = "<group>"; };
 		FB99EF882AB8F9A7009441FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
 				FB17FC522AD633040020BC81 /* DemoTag.swift */,
 				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
+				FB94616D2ADF7535005F3417 /* OrgInfoViewFav.swift */,
 				FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */,
 				FB8E96012ADA003C00232B92 /* TagsBarComponent.swift */,
 				FB8E95FD2AD9F61D00232B92 /* ToolBarComponent.swift */,
@@ -379,6 +382,7 @@
 				FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */,
 				FB17FC632AD63DA70020BC81 /* CallButtonView.swift in Sources */,
 				DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */,
+				FB94616E2ADF7535005F3417 /* OrgInfoViewFav.swift in Sources */,
 				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
 				FBA740A92ACB8FB200123543 /* Tag.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,

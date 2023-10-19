@@ -52,6 +52,6 @@ struct SearchPage: View {
 }
 
 #Preview {
-    SearchPage(searchTags: ["social"])
+    SearchPage(searchTags: ["social", "mujeres"])
 }
 

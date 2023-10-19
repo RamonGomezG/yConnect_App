@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct TaskSearchBarComponent: View {
     @StateObject var viewModel: TagModel
+    @Query var users: [Users]
     
     var body: some View {
             HStack{
                 HStack {
                     Image(systemName: "magnifyingglass")
                     TextField("Buscar etiquetas...", text: $viewModel.tagText, onCommit: {
+                        users.first!.Tags.append(viewModel.tagText.lowercased())
                         viewModel.addTag()
                     })
                     Spacer()

@@ -4,13 +4,14 @@
 //
 //  Created by Alumno on 16/10/23.
 //
-
+import SwiftData
 import SwiftUI
 
 struct RegistroPersView: View {
     @State private var name_person = ""
     @State private var location_person = ""
     @State private var description_person = ""
+    @Environment(\.modelContext) var context
     
     var body: some View {
         Rectangle()
@@ -60,7 +61,7 @@ struct RegistroPersView: View {
                         }
                         .padding()
                         
-                        NavigationLink(destination: FavsPage()) {
+                        NavigationLink(destination: FavsPage(searchTags: ["mujeres"])) { //corregir luego
                             Text("Organizaciones Favoritas")
                                 .font(.title2)
                                 .frame(width: 200, height: 60, alignment: .center)
@@ -78,6 +79,22 @@ struct RegistroPersView: View {
                                 .cornerRadius(10)
                         }
                         .padding()
+                        Button(action: {
+                            do {
+                                try context.delete(model: Users.self )
+                                exit(0)
+                            } catch {
+                                print("failed to clear users")
+                            }
+                            
+                        }, label: {
+                            Text("Cerrar sesión")
+                                .font(.title2)
+                                .frame(width: 180, height: 40, alignment: .center)
+                                .background(Color.Resolved(red: 1.0, green: 0.5, blue: 0.5))
+                                .foregroundColor(Color.white)
+                                .cornerRadius(10)
+                        })
                         Spacer()
                         
                     }
