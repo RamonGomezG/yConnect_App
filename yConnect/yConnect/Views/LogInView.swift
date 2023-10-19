@@ -9,9 +9,10 @@ import SwiftUI
 
 struct LogInView: View {
     @State var phoneNumber: String = ""
+    var userModel = UserModel()
+    @State var isLogged = false
     
     var body: some View {
-        
         ZStack {
             Image("fondoyconnect")
                 .resizable()
@@ -36,7 +37,7 @@ struct LogInView: View {
                 .cornerRadius(50)
                 Spacer().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 20)
                 NavigationLink {
-                   ConfirmCodeView(phoneNumber: phoneNumber)
+                    ConfirmCodeView(phoneNumber: phoneNumber)
                 } label: {
                     HStack {
                         Text("Ingresar")
@@ -49,7 +50,6 @@ struct LogInView: View {
                             .fill(.principalDarker))
                         
                 }
-                
             }
             .padding(.vertical, 50)
             .padding(.horizontal, 30)

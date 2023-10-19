@@ -14,6 +14,7 @@ struct ConfirmCodeView: View {
     @State var confirmCode: String = ""
     @State var phoneNumber: String
     @State var isLogged: Bool = false
+    var userModel = UserModel()
     
     //@Query private var user: [Users]
     
@@ -45,8 +46,13 @@ struct ConfirmCodeView: View {
                     Button(action: {
                         //verificar codigo
                         //registrar usuario localmente
-                        setUser(userPhoneNumber: phoneNumber)
-                        isLogged.toggle()
+                        if userModel.exists.first! {
+                            setUser(userPhoneNumber: phoneNumber)
+                            isLogged.toggle()
+                        } else {
+                            debugPrint("nope")
+                            userModel.exists.removeAll()
+                        }
                     }, label: {
                         HStack {
                             Text("Confirmar")
@@ -63,14 +69,19 @@ struct ConfirmCodeView: View {
                 .padding(.horizontal, 30)
                 .background(.colorPrincipal)
                 .cornerRadius(10)
-            }.navigationBarBackButtonHidden(true)
+            }
+            .onAppear{
+                userModel.veifyUser(telephone: phoneNumber)
+                userModel.setUser(telephone: phoneNumber)
+            }
+            .navigationBarBackButtonHidden(false)
         } else {
             TagSelectView()
         }
     }
         
     func setUser(userPhoneNumber: String) {
-        let user = Users(id: "", Name: "", Telephone: phoneNumber, Email: "", DescriptionA: "", Tags: [], Favorites: [], Password: "")
+        let user = Users(id: " ", Name: " ", Telephone: phoneNumber, Email: " ", DescriptionA: " ", Tags: [" "], Favorites: [" "], Password: " ")
         context.insert(user)
     }
     
