@@ -43,21 +43,14 @@ struct OrgInfoView: View {
                     }
                     .padding(.horizontal, 18)
                     .padding(.top, 5)
-                    Button(action: {
-                        isFavorite.toggle()}) {
-                            Image(systemName: isFavorite ? "heart.fill" : "heart")
-                                .resizable()
-                                .frame(width: 25, height: 23)
-                                .foregroundStyle(isFavorite ? Color("BackColor") : Color("BackColor"))
-                        }
-                        .padding(.trailing, 20)
+                    HeartView(organization: organization)
                         .padding(.horizontal, 10)
+                        .padding(.trailing, 20)
                         .padding(.top, 8)
                 }
                 HStack(spacing: 5){
-                    CallButtonView(phoneNumber: "\(organization.Telephone)", icon: "phone.fill")
-                    ShareButtonView(shareText: "Apps", icon: "arrowshape.turn.up.right.fill")
-                    DirectionButtonView(address: "\(organization.Location)", icon: "map.fill")
+                    ToolBarComponent(organization: organization)
+                        .padding(.horizontal, 1)
                 }
                 .padding(.horizontal, 18)
                 .padding(.top, 5)

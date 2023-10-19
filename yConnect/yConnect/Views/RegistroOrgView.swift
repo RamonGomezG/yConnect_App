@@ -23,7 +23,7 @@ struct RegistroOrgView: View {
             VStack{
                 Text("Registro de organizaciones")
                     .font(.title)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color("TitleColor"))
                     .padding()
                 HStack{
                     TextField("Nombre de la OSC", text: $orgname_OSC)

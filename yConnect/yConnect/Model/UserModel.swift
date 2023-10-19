@@ -14,6 +14,8 @@ import SwiftyJSON
 class UserModel {
     
     var users = [Users]()
+    var person = Users.userDummy
+    var favoriteOrgs: [String] = []
     
     init () {
         
@@ -42,13 +44,22 @@ class UserModel {
         }
     }
     
-    func updatePersDatos(){
+    func updatePersDatos(ID: String, Name: String, Telephone: String, Description: String, Tags: [String], Favorites: [String]){
         users.removeAll()
         
         let url = "http://10.14.255.175:3000/users/Update"
         
-        AF.request(url,method: .post).response { [self] data in
+        let parameters: [String: Any] = [
+            "id": ID,
+            "name": Name,
+            "telephone" : Telephone,
+            "description": Description,
+            "tags": Tags,
+            "Favorites": Favorites]
+        
+        AF.request(url,method: .post, parameters: parameters, encoding: JSONEncoding.default).response { [self] data in
             let json = try! JSON(data: data.data!)
+            debugPrint(json)
             
             for u in json["data"].arrayValue{
                 let user = Users(
@@ -60,7 +71,7 @@ class UserModel {
                     Tags: u["Tags"].arrayObject as? [String] ?? [],
                     Favorites: u["Favorites"].arrayObject as? [String] ?? [],
                     Password: u["Password"].stringValue)
-                users.append(user)
+                self.users.append(user)
             }
         }
     }
