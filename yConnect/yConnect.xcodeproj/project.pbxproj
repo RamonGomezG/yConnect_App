@@ -63,6 +63,7 @@
 		FBB0ED5C2AC63E58001CC506 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5B2AC63E58001CC506 /* MyButton.swift */; };
 		FBB0ED5E2AC63EB8001CC506 /* RegistroOrgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */; };
 		FBB0ED602AC640BB001CC506 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */; };
+		FBD0E79D2AE1D80700B9B3E7 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD0E79C2AE1D80700B9B3E7 /* HeartView.swift */; };
 		FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */; };
 		FBE1BF002AD4C79B00A5FA07 /* OrganizationPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +125,7 @@
 		FBB0ED5B2AC63E58001CC506 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		FBB0ED5D2AC63EB8001CC506 /* RegistroOrgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroOrgView.swift; sourceTree = "<group>"; };
 		FBB0ED5F2AC640BB001CC506 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		FBD0E79C2AE1D80700B9B3E7 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
 		FBD331DC2ABA6CAA007D4046 /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
 		FBE1BEFF2AD4C79B00A5FA07 /* OrganizationPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationPostsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +178,7 @@
 				FBA740AC2ACB93ED00123543 /* TaskSearchBarComponent.swift */,
 				FB17FC522AD633040020BC81 /* DemoTag.swift */,
 				FB17FC602AD63D9A0020BC81 /* OrgInfoView.swift */,
+				FBD0E79C2AE1D80700B9B3E7 /* HeartView.swift */,
 				FB94616D2ADF7535005F3417 /* OrgInfoViewFav.swift */,
 				FB8E96032ADA036900232B92 /* OrgInfoGalleryComponent.swift */,
 				FB8E96012ADA003C00232B92 /* TagsBarComponent.swift */,
@@ -376,6 +379,7 @@
 				FB99EFA22AB9194F009441FD /* SearchView.swift in Sources */,
 				FB8E96022ADA003C00232B92 /* TagsBarComponent.swift in Sources */,
 				FB17FC4D2AD632ED0020BC81 /* SearchPage.swift in Sources */,
+				FBD0E79D2AE1D80700B9B3E7 /* HeartView.swift in Sources */,
 				FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */,
 				FB1626592ABA5BD40060C52A /* LogInView.swift in Sources */,
 				FB1626572ABA56E30060C52A /* StartView.swift in Sources */,
