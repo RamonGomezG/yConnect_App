@@ -61,48 +61,47 @@ struct RegistroPersView: View {
                         }
                         .padding()
                         
-                        NavigationLink(destination: FavsPage(searchTags: ["mujeres"])) { //corregir luego
+                        NavigationLink(destination: FavsPage()) { //corregir luego
                             Text("Organizaciones Favoritas")
                                 .font(.title2)
                                 .frame(width: 200, height: 60, alignment: .center)
                                 .background(Color.principalDarker)
                                 .foregroundColor(Color.white)
                                 .cornerRadius(10)
-                        }
-                        
-                        NavigationLink(destination: RegistroOrgView()) {
-                            Text("Registro organizaciones")
-                                .font(.title2)
-                                .frame(width: 300, height: 60, alignment: .center)
-                                .background(Color.principalDarker)
-                                .foregroundColor(Color.white)
-                                .cornerRadius(10)
-                        }
-                        .padding()
-                        Button(action: {
-                            do {
-                                try context.delete(model: Users.self )
-                                exit(0)
-                            } catch {
-                                print("failed to clear users")
-                            }
                             
-                        }, label: {
-                            Text("Cerrar sesión")
-                                .font(.title2)
-                                .frame(width: 180, height: 40, alignment: .center)
-                                .background(Color.Resolved(red: 1.0, green: 0.5, blue: 0.5))
-                                .foregroundColor(Color.white)
-                                .cornerRadius(10)
-                        })
-                        Spacer()
-                        
+                            NavigationLink(destination: RegistroOrgView()) {
+                                Text("Registro organizaciones")
+                                    .font(.title2)
+                                    .frame(width: 300, height: 60, alignment: .center)
+                                    .background(Color.principalDarker)
+                                    .foregroundColor(Color.white)
+                                    .cornerRadius(10)
+                            }
+                            .padding()
+                            Button(action: {
+                                do {
+                                    try context.delete(model: Users.self )
+                                    exit(0)
+                                } catch {
+                                    print("failed to clear users")
+                                }
+                                
+                            }, label: {
+                                Text("Cerrar sesión")
+                                    .font(.title2)
+                                    .frame(width: 180, height: 40, alignment: .center)
+                                    .background(Color.Resolved(red: 1.0, green: 0.5, blue: 0.5))
+                                    .foregroundColor(Color.white)
+                                    .cornerRadius(10)
+                            })
+                            Spacer()
+                            
+                        }
                     }
                 }
             )
     }
 }
-
 struct RegistroPersView_Previews: PreviewProvider {
     static var previews: some View {
         RegistroPersView()

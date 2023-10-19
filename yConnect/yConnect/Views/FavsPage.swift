@@ -33,7 +33,10 @@ struct FavsPage: View {
         .background(Color("BackColor"))
         .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .onAppear {
-            organizationModel.fetchOrganizationsByIDs(id: userModel.favoriteOrgs)
+            userModel.fetchFavorites()
+            userModel.favoriteOrgs = userModel.person.Favorites
+            //organizationModel.fetchOrganizationsByIDs(id: organizationModel.organizations)
+            
         }
     }
 }
