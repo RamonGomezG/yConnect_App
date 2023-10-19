@@ -19,13 +19,25 @@ struct FavsPage: View {
             if organizationModel.organizations.count > 0 {
                 ScrollView{
                     ForEach(organizationModel.organizations, id: \.id) { org in
-                        OrgInfoViewFav(organization: org)
-                        .padding(.bottom, 3)
+                        NavigationLink {
+                            OrgProfileView(organization: org)
+                        }
+                        label: {
+                            OrgInfoViewFav(organization: org)
+                        }
                     }
+                    NavigationLink {
+                        OrgProfileView(organization: Organization.dummy)
+                    }
+                    label: {
+                        OrgInfoViewFav(organization: Organization.dummy)
+                    }
+                    
                 }
             } else {
                 Text("loading")
             }
+            
         }
         .padding(.top, 50)
         .background(Color("BackColor"))
