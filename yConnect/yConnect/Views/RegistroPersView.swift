@@ -12,6 +12,7 @@ struct RegistroPersView: View {
     @State private var location_person = ""
     @State private var description_person = ""
     @Environment(\.modelContext) var context
+    var userModel = UserModel()
     
     var body: some View {
         Rectangle()
@@ -61,14 +62,14 @@ struct RegistroPersView: View {
                         }
                         .padding()
                         
-                        NavigationLink(destination: FavsPage()) { //corregir luego
+                        NavigationLink(destination: FavsPage(userModel: userModel)) { //corregir luego
                             Text("Organizaciones Favoritas")
                                 .font(.title2)
                                 .frame(width: 200, height: 60, alignment: .center)
                                 .background(Color.principalDarker)
                                 .foregroundColor(Color.white)
                                 .cornerRadius(10)
-                            
+                        }
                             NavigationLink(destination: RegistroOrgView()) {
                                 Text("Registro organizaciones")
                                     .font(.title2)
@@ -94,11 +95,14 @@ struct RegistroPersView: View {
                                     .foregroundColor(Color.white)
                                     .cornerRadius(10)
                             })
+                            
                             Spacer()
                             
-                        }
-                    }
-                }
+                        
+                    }}
+//                    .onAppear {
+//                        userModel.loadFavs()
+//                    }
             )
     }
 }

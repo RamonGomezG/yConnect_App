@@ -43,7 +43,7 @@ struct OrgInfoView: View {
                     }
                     .padding(.horizontal, 18)
                     .padding(.top, 5)
-                    HeartView(userModel: UserModel(), organization: Organization(id: "92301782173921", Name: "Arena", Location: "Avenida Euge", Description: "djs.jaskd", Tags: ["sjkjahdk"], Igtag: "jkdkjasd", Telephone: "1231231", Email: "ajsdkjjask"), isFavorite: false)
+                    HeartView(organizationsModel: organization)
                         .padding(.horizontal, 10)
                         .padding(.trailing, 20)
                         .padding(.top, 8)

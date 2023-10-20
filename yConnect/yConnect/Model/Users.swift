@@ -41,7 +41,7 @@ extension Users {
         Email: "yconnection@gmail.com",
         DescriptionA: "Aplicacion movil de conecxión con OSCs",
         Tags: ["Autismo", "Terapia"],
-        Favorites: ["Uno", "Dos"],
+        Favorites: [],
         Password: "contraseña123"
     )
 }
