@@ -54,12 +54,32 @@ class UserModel {
         
         AF.request(url,method: .post, parameters: parameters, encoding: JSONEncoding.default).response { data in
             let json = try! JSON(data: data.data!)
+            
+            //for u in json["result"].arrayValue{
+            let u = json["result"]
+             
+            debugPrint(u)
+            
+            let user = Users(
+                id: u["ID"].stringValue,
+                Name: u["Name"].stringValue,
+                Telephone: u["Telephone"].stringValue,
+                Email: u["Name"].stringValue,
+                DescriptionA: u["Description"].stringValue,
+                Tags: u["Tags"].arrayObject as? [String] ?? [],
+                Favorites: u["Favorites"].arrayObject as? [String] ?? [],
+                Password: u["Password"].stringValue)
+            self.users.append(user)
+            debugPrint(user)
+            
 
             if json["result"]["Telephone"] != "" {
                 self.exists.append(true)
             } else {
                 self.exists.append(false)
             }
+            
+            
         }
         
     }

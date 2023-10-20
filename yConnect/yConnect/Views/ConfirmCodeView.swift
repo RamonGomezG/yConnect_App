@@ -72,7 +72,7 @@ struct ConfirmCodeView: View {
             }
             .onAppear{
                 userModel.veifyUser(telephone: phoneNumber)
-                userModel.setUser(telephone: phoneNumber)
+                //userModel.setUser(telephone: phoneNumber)
             }
             .navigationBarBackButtonHidden(false)
         } else {
@@ -81,7 +81,10 @@ struct ConfirmCodeView: View {
     }
         
     func setUser(userPhoneNumber: String) {
-        let user = Users(id: " ", Name: " ", Telephone: phoneNumber, Email: " ", DescriptionA: " ", Tags: [" "], Favorites: [" "], Password: " ")
+        
+        //let user = Users(id: " ", Name: " ", Telephone: phoneNumber, Email: " ", DescriptionA: " ", Tags: [" "], Favorites: [" "], Password: " ")
+        
+        let user = userModel.users.first!
         context.insert(user)
     }
     
