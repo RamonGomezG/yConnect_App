@@ -10,6 +10,7 @@ import SwiftData
 
 struct ExploreView: View {
     @Query var users: [Users]
+    //var userModel: UserModel
     var tags: [Tag] = []
     
     var body: some View {
@@ -49,6 +50,9 @@ struct ExploreView: View {
                     
                 }
             }
+        }.onAppear{
+            //userModel.setUser(telephone: users.first!.Telephone)
+            
         }
         .navigationBarBackButtonHidden(true)
         
