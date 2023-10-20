@@ -38,7 +38,7 @@ struct RegistroOrgsButton: View{
     
     struct RegistroOrgsButton_Previews: PreviewProvider{
         static var previews: some View{
-            TagsButton(title: "Registro organizaciones", action: {}, backgroundColor: .colorPrincipal)
+            RegistroOrgsButton(title: "Registro organizaciones", action: {}, backgroundColor: .colorPrincipal)
             
         }
     }
