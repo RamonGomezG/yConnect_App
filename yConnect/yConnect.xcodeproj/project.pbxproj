@@ -36,6 +36,8 @@
 		FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB50086E2ABD0B3800028EEB /* TagSelectView.swift */; };
 		FB5008712ABD0D1C00028EEB /* TagComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008702ABD0D1C00028EEB /* TagComponent.swift */; };
 		FB5008732ABD127B00028EEB /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5008722ABD127B00028EEB /* ButtonComponent.swift */; };
+		FB7E4F172AE200E5001A3324 /* RegistroOrgsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E4F162AE200E5001A3324 /* RegistroOrgsButton.swift */; };
+		FB7E4F192AE200F9001A3324 /* TagsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E4F182AE200F9001A3324 /* TagsButton.swift */; };
 		FB8E95FC2AD9EE0200232B92 /* OrgPostsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E95FB2AD9EE0200232B92 /* OrgPostsSection.swift */; };
 		FB8E95FE2AD9F61D00232B92 /* ToolBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E95FD2AD9F61D00232B92 /* ToolBarComponent.swift */; };
 		FB8E96002AD9FC9B00232B92 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8E95FF2AD9FC9B00232B92 /* LocationMapView.swift */; };
@@ -96,6 +98,8 @@
 		FB5008702ABD0D1C00028EEB /* TagComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagComponent.swift; sourceTree = "<group>"; };
 		FB5008722ABD127B00028EEB /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		FB6CB5252AC786CF006C08ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB7E4F162AE200E5001A3324 /* RegistroOrgsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistroOrgsButton.swift; path = yConnect/RegistroOrgsButton.swift; sourceTree = SOURCE_ROOT; };
+		FB7E4F182AE200F9001A3324 /* TagsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagsButton.swift; path = yConnect/TagsButton.swift; sourceTree = SOURCE_ROOT; };
 		FB8E95FB2AD9EE0200232B92 /* OrgPostsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgPostsSection.swift; sourceTree = "<group>"; };
 		FB8E95FD2AD9F61D00232B92 /* ToolBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarComponent.swift; sourceTree = "<group>"; };
 		FB8E95FF2AD9FC9B00232B92 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 			children = (
 				FB99EFA12AB9194F009441FD /* SearchView.swift */,
 				FB99EF9D2AB90FE4009441FD /* SectionView.swift */,
+				FB7E4F162AE200E5001A3324 /* RegistroOrgsButton.swift */,
 				DB3349BC2AC3B48B00F99430 /* ImageView.swift */,
 				FB5008722ABD127B00028EEB /* ButtonComponent.swift */,
 				FB17FC622AD63DA70020BC81 /* CallButtonView.swift */,
@@ -187,6 +192,7 @@
 				DB3349C02AC3BAB500F99430 /* VideoView.swift */,
 				FB99EFA72AB922C4009441FD /* LogoView.swift */,
 				FB8E95FB2AD9EE0200232B92 /* OrgPostsSection.swift */,
+				FB7E4F182AE200F9001A3324 /* TagsButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				FBD331DD2ABA6CAA007D4046 /* ConfirmCodeView.swift in Sources */,
 				FB50086F2ABD0B3800028EEB /* TagSelectView.swift in Sources */,
 				FB17FC612AD63D9A0020BC81 /* OrgInfoView.swift in Sources */,
+				FB7E4F172AE200E5001A3324 /* RegistroOrgsButton.swift in Sources */,
 				FB17FC5D2AD63D830020BC81 /* DirectionButtonView.swift in Sources */,
 				FB8E96002AD9FC9B00232B92 /* LocationMapView.swift in Sources */,
 				FBA740AB2ACB918B00123543 /* TagModel.swift in Sources */,
@@ -388,6 +395,7 @@
 				DB3349C32AC3C09800F99430 /* VideoItemView.swift in Sources */,
 				FB94616E2ADF7535005F3417 /* OrgInfoViewFav.swift in Sources */,
 				DB3349C12AC3BAB500F99430 /* VideoView.swift in Sources */,
+				FB7E4F192AE200F9001A3324 /* TagsButton.swift in Sources */,
 				FBA740A92ACB8FB200123543 /* Tag.swift in Sources */,
 				FB99EF872AB8F9A7009441FD /* yConnectApp.swift in Sources */,
 				FBE1BF002AD4C79B00A5FA07 /* OrganizationPostsView.swift in Sources */,
