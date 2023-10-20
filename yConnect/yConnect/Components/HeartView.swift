@@ -1,42 +1,52 @@
 //
 //  HeartView.swift
-//  yConnect
+//  Persons-MongoDB
 //
-//  Created by Alumno on 17/10/23.
+//  Created by David Cantú Delgado on 17/10/23.
 //
 
 import SwiftUI
+import SwiftData
 
 struct HeartView: View {
     
-    var userModel: UserModel
-    var organization: Organization
-    @State var isFavorite: Bool
-
+    var userModel = UserModel()
+    var organizationsModel: Organization
+    @State var isFavorite: Bool = false
+    
     var body: some View {
         VStack {
-            Button(action: {
-                isFavorite.toggle() // Cambia el estado de isFavorite cuando se hace clic
-
-                if isFavorite {
-                    userModel.person.Favorites.append(organization.id)
-                } else {
-                    userModel.person.Favorites = userModel.person.Favorites.filter { $0 != organization.id }
+            if isFavorite {
+                Button {
+                    userModel.person.Favorites = userModel.person.Favorites.filter { $0 != organizationsModel.id}
+                    // actualiza user
+                    print("Quitar")
+                } label: {
+                    Image(systemName: "heart.fill")
+                        .font(.largeTitle)
+                        .foregroundStyle(Color("BackColor"))
                 }
-
-            }) {
-                Image(systemName: isFavorite ? "heart.fill" : "heart")
-                    .font(.largeTitle)
-                    .frame(width: 25, height: 23)
-                    .foregroundStyle(Color("BackColor"))
+            } else {
+                Button {
+                    userModel.person.Favorites.append(organizationsModel.id)
+                    // atualiza user
+                } label: {
+                    Image(systemName: "heart")
+                        .font(.largeTitle)
+                        .foregroundStyle(Color("BackColor"))
+                }
             }
         }
         .onAppear {
-            isFavorite = userModel.person.Favorites.contains(organization.id)
+            print(organizationsModel.id)
+            print("Favoritos")
+            print(userModel.person.Favorites)
+            isFavorite = userModel.person.Favorites.contains(organizationsModel.id)
         }
     }
 }
 
+
 #Preview {
-    HeartView(userModel: UserModel(), organization: Organization(id: "92301782173921", Name: "Arena", Location: "Avenida Euge", Description: "djs.jaskd", Tags: ["sjkjahdk"], Igtag: "jkdkjasd", Telephone: "1231231", Email: "ajsdkjjask"), isFavorite: false)
+    HeartView(organizationsModel: Organization(id: "652dba6aeb3291db16e6a078", Name: "qwjklj", Location: "klasdjlkasd", Description: "jkasdhkja", Tags: ["jdnhjkash"], Igtag: "ansjdkas", Telephone: "71291238", Email: "jslkdjas"))
 }

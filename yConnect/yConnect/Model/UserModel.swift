@@ -22,6 +22,10 @@ class UserModel {
         
     }
     
+    func loadFavs() {
+        person.Favorites = ["6528721d6133faea91a99b47"]
+    }
+    
     func fetchFavorites() {
         users.removeAll()
         
