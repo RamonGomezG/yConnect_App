@@ -1,4 +1,3 @@
-```markdown
 # yConnect: Plataforma de Conexión entre Usuarios y Organizaciones Sociales
 
 ## Descripción
