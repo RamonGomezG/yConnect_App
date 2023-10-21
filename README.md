@@ -32,12 +32,6 @@ Los usuarios pueden interactuar con las publicaciones de las organizaciones dire
 2. Abre el proyecto en Xcode 15.
 3. Compila y ejecuta la aplicación en tu dispositivo iOS o en el simulador.
 
-## Contacto
-
-Para cualquier pregunta o comentario, no dudes en ponerte en contacto con el equipo de yConnect en [correo electrónico].
-
----
-
 <!-- Etiquetas de Estilizado para README -->
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Swift Version](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
